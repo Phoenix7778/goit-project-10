@@ -1,1 +1,36 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.main-sale__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $white-text-color;
+  @media screen and ($tablet-min) {
+    font-size: 56px;
+    line-height: 1.18;
+  }
+}
+
+.wrap-content__title {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 1.18px;
+
+  color: $green-text-color;
+}
+
+.box-prices__old-price {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration-line: line-through;
+
+  color: $grey-text-color;
+}
+
+.box-prices__new-price {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1;
+  color: $green-text-color;
+}
