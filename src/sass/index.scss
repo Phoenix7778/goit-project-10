@@ -1,7 +1,7 @@
 @import './common';
-@import './variables';
-@import './utils/mixin';
-@import './global-styles';
+@import './base/variables';
+@import './utils/mixins';
+@import './base/global-styles';
 @import './components/buttons/buttons';
 @import './components/modal/modal';
 @import './layout/header/header';
