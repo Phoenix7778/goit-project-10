@@ -1,9 +1,21 @@
+// Кольори тексту
 $white-text-color: #ffffff;
 $green-text-color: #86e543;
 $dark-text-color: #000000;
 $grey-text-color: #8d9289;
 $teal-text-color: #01383a;
 
+// Тінь кнопок
+$green-btn-shadow: rgba(134, 229, 67, 0.5),
+  0px 4px 10px rgba(255, 255, 255, 0.1);
+$white-btn-shadow: rgba(255, 255, 255, 0.5),
+  0px 4px 10px rgba(134, 229, 67, 0.1);
+
+// Тінь лінії
+$line-shadow: rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5),
+  0px 4px 4px rgba(17, 168, 26, 0.2);
+
+// Розміри екранів
 $mobile-min: 320px;
 $mobile-max: 767.5px;
 $tablet-min: 768px;
