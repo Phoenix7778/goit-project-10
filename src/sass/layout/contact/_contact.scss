@@ -1,1 +1,23 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.container_contact {
+padding-left: 0;
+padding-right: 0;
+}
+
+.contact_title {
+margin-left: 16px;
+margin-bottom: 35px;
+}
+
+.contact_img {
+margin-bottom: 16px;
+}
+
+.contact_text {
+padding-left: 16px;
+padding-right: 16px;
+}
+
+.contact_text-mail {
+margin-top: 28px;
+}
