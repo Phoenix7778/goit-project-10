@@ -1,1 +1,93 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.header {
+    position: relative;
+     padding: 24px 0;
+     background: $teal-text-color;
+     box-shadow:  0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+
+@media screen and (min-width: $tablet-min) {
+    padding: 40px 0;    
+}
+}
+
+.header__overlay {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 115px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.2;
+    text-align: center;
+    color: $white-text-color;
+
+    @media screen and (min-width: $tablet-min) {
+     width: 156px;   
+    }
+
+    @media screen and (min-width: $desktop-min) {
+        width: 121px;   
+       }
+}
+
+.header__nav {
+    @media screen and (max-width: $tablet-max) {
+    display: none;    
+    }
+}
+
+.header__list {
+    @media screen and (min-width: $desktop-min) {
+        display: flex;    
+        }  
+}
+
+.header__item:not(:last-child) {
+    margin-right: 48px;
+}
+
+.header__link {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 1;
+    color: $white-text-color;
+}
+
+.header__button {
+    color: $dark-text-color;
+}
+
+.button--header {
+    @media screen and (max-width: $mobile-max) {
+     display: none;   
+    }
+}
+
+.button-open-menu {
+    border: none;
+    background-color: transparent;
+    @media screen and (min-width: $desktop-min) {
+    display: none;    
+    }
+}
+
+.button-close-menu {
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    background-color: transparent;
+    border: none;
+
+@media screen and (max-width: $tablet-max) {
+    top: 46px;
+    right: 43%;
+}
+
+@media screen and (min-width: $desktop-min) {
+   display: none;
+}
+}
