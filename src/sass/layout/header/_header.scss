@@ -26,9 +26,6 @@
     text-align: center;
     color: $white-text-color;
 
-    @media screen and (min-width: $tablet-min) {
-     width: 156px;   
-    }
 
     @media screen and (min-width: $desktop-min) {
         width: 121px;   
@@ -88,16 +85,49 @@
 .button-close-menu {
     position: absolute;
     top: 30px;
-    right: 16px;
+    right: 26px;
     background-color: transparent;
     border: none;
 
 @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
     top: 46px;
-    right: 43%;
+    right: 45%;
 }
 
 @media screen and (min-width: $desktop-min) {
-   display: none;
+    display: none;
 }
+}
+
+.menu-container {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
+
+    @media screen and (min-width: $desktop-min) {
+    display: none;    
+    }
+}
+
+.menu-container.button-close-menu {
+    display: none;
+}
+
+// .is-hidden {
+//     opacity: 0;
+//     pointer-events: none;
+//     visibility: hidden;
+// }
+
+.menu-link {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.2;
+    text-transform: uppercase;
+    color: $white-text-color;
+    &:hover,
+    &:focus {
+    border-bottom: 1px solid $green-text-color;
+        }
 }
