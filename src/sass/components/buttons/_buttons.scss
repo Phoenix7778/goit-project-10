@@ -6,58 +6,118 @@
   align-items: center;
   flex-direction: column;
   gap: 30px;
+  background-color: rgb(230, 173, 175);
 }
 .button {
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   border-color: transparent;
-  min-width: 173px;
-  height: 51px;
+
   border-radius: 16px;
   border-width: 0;
   font-weight: 700;
-  font-size: 16px;
-  line-height: calc(19 / 16);
-  text-transform: uppercase;
   text-align: center;
-  color: $teal-text-color;
-  background-color: $green-text-color;
   display: inline-block;
-  @include tablet {
-    min-width: 306px;
-    height: 70px;
-    font-size: 32px;
-    line-height: calc(38 / 32);
-  }
-  &:hover,
-  &:focus {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+  &--base {
+    min-width: 173px;
+    height: 51px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-transform: uppercase;
+    color: $teal-text-color;
+    background-color: $green-text-color;
+    @include tablet {
+      min-width: 306px;
+      height: 70px;
+      font-size: 32px;
+      line-height: calc(38 / 32);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+        0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
   }
   &--order {
+    min-width: 173px;
+    height: 51px;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-transform: uppercase;
     color: $green-text-color;
     background-color: $teal-text-color;
     border: 1px solid $green-text-color;
+    @include tablet {
+      min-width: 306px;
+      height: 70px;
+      font-size: 32px;
+      line-height: calc(38 / 32);
+    }
     &:hover,
     &:focus {
-      filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
-        drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+      box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+        0px 4px 20px rgba(134, 229, 67, 0.4);
     }
   }
   &--header {
     min-width: 95px;
     height: 40px;
-    text-transform: none;
     font-size: 14px;
     line-height: calc(22 / 14);
     letter-spacing: -0.03em;
     color: $dark-text-color;
+    background-color: $green-text-color;
     @include desktop {
       min-width: 102px;
       height: 46px;
       font-size: 14px;
       line-height: 1;
       letter-spacing: 0;
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+        0px 4px 10px rgba(255, 255, 255, 0.1);
+    }
+  }
+  &--sale {
+    min-width: 153px;
+    height: 51px;
+    background-color: $white-text-color;
+    color: $teal-text-color;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    @include tablet {
+      min-width: 195px;
+      height: 65px;
+      font-size: 28px;
+      line-height: calc(33 / 28);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+        0px 4px 10px rgba(134, 229, 67, 0.1);
+    }
+  }
+  &--contacts {
+    min-width: 173px;
+    height: 51px;
+    border: 1px solid $white-text-color;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    text-transform: uppercase;
+    color: $white-text-color;
+    background-color: $teal-text-color;
+    @include tablet {
+      min-width: 306px;
+      height: 70px;
+      font-size: 32px;
+      line-height: calc(38 / 32);
+    }
+    &:hover,
+    &:focus {
+      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1),
+        0px 4px 20px rgba(255, 255, 255, 0.4);
     }
   }
   &--filter {
@@ -71,12 +131,47 @@
     border: 1px solid $green-text-color;
     &:hover,
     &:focus {
-      filter: drop-shadow(0px 4px 10px rgba(134, 229, 67, 0.1))
-        drop-shadow(0px 4px 20px rgba(134, 229, 67, 0.4));
+      box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+        0px 4px 20px rgba(134, 229, 67, 0.4);
     }
     &:active {
       color: $teal-text-color;
       background-color: $green-text-color;
+      box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+    }
+    @include tablet {
+      min-width: 132px;
+      height: 51px;
+    }
+    @include desktop {
+      min-width: 168px;
+    }
+  }
+  &--like {
+    min-width: 171px;
+    height: 80px;
+    font-size: 32px;
+    line-height: calc(38 / 32);
+    text-transform: uppercase;
+    color: $teal-text-color;
+    background-color: $green-text-color;
+    &:active {
+      box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+        0px 4px 20px rgba(134, 229, 67, 0.4);
+    }
+  }
+  &--dislike {
+    min-width: 171px;
+    height: 80px;
+    font-size: 32px;
+    line-height: calc(38 / 32);
+    text-transform: uppercase;
+    color: $green-text-color;
+    background-color: $teal-text-color;
+    border: 1px solid $green-text-color;
+    &:active {
+      filter: 0px 4px 10px rgba(134, 229, 67, 0.1),
+        0px 4px 20px rgba(134, 229, 67, 0.4);
     }
   }
 }
