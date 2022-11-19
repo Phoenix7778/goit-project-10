@@ -14,6 +14,7 @@
     function toggleMenu() {
       refs.menu.classList.toggle('is-hidden');
       refs.body.classList.toggle('no-scroll');
+      
     }
     function removeMenu() {
       refs.menu.classList.add('is-hidden');

@@ -83,13 +83,28 @@
 }
 
 .menu-container {
+    
     position: fixed;
-    bottom: -150px;
+    top: 110px;
     width: 100%;
     height: 100%;
     z-index: 1;
+ 
     background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+        background-image: url(/src/images/img-bg-menu/bg-menu-mobile-2x.jpg);
+  }
 
+    @media screen and (min-width: $tablet-min) {
+        background-image: url(/src/images/img-bg-menu/bg-menu-tablet.jpg);
+     @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/src/images/img-bg-menu/bg-menu-tablet-2x.jpg);
+      }      
+    }
     @media screen and (min-width: $desktop-min) {
     display: none;    
     }
@@ -99,6 +114,10 @@
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
+    }
+
+.no-scroll {
+    overflow: hidden;
     }
 
 .button-close-menu {
@@ -119,19 +138,39 @@
 }
 }
 
+.menu__list {
+    text-align: center;
+    padding-top: 64px;
+@media screen and (min-width: $tablet-min) {
+    padding-top: 120px; 
+    }
 
-.menu-link {
+}
+
+.menu__item:not(:last-child) {
+margin-bottom: 40px;
+}
+
+
+.menu__link {
     font-weight: 700;
-    font-size: 32px;
+    font-size: 24px;
     line-height: 1.2;
     text-transform: uppercase;
     color: $white-text-color;
+    transition: border-bottom 250ms linear;
     &:hover,
     &:focus {
     border-bottom: 1px solid $green-text-color;
         }
 
+@media screen and (min-width: $tablet-min) {
+    font-size: 32px; 
+}
+
 @media screen and (min-width: $desktop-min) {
     display: none;   
 }
 }
+
+  
