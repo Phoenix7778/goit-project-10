@@ -22,6 +22,7 @@
     font-weight: 700;
     font-size: 24px;
     line-height: 1.2;
+    text-transform: uppercase;
     text-align: center;
     color: $white-text-color;
 
@@ -50,11 +51,20 @@
     margin-right: 48px;
 }
 
+.header__item {
+    display: flex;
+    margin-bottom: 8px;
+}
+
 .header__link {
+    padding-bottom: 8px;
     text-decoration: none;
     font-size: 16px;
     line-height: 1;
     color: $white-text-color;
+    &.current {
+   border-bottom: 1px solid $green-text-color;
+        }
 }
 
 .header__button {
@@ -77,12 +87,12 @@
 
 .button-close-menu {
     position: absolute;
-    top: 24px;
+    top: 30px;
     right: 16px;
     background-color: transparent;
     border: none;
 
-@media screen and (max-width: $tablet-max) {
+@media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
     top: 46px;
     right: 43%;
 }
