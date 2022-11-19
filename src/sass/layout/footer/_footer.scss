@@ -1,1 +1,70 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 40px 0;
+    background: #001414;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: block;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    @media (min-width: 768px) and (max-width: 1279px) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 30px 165px;
+        gap: 60px 165px;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        align-items: baseline;
+    }
+}
+
+.logofooter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.map {
+    display: block;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.map__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    list-style: none;
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+.box {
+    margin-bottom: 16px;
+}
+
+.address__field {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+}
