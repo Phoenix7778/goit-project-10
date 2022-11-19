@@ -134,4 +134,9 @@ textarea {
     background-image: url(../images/img-bg/bg-tablet.jpg);
     background-size: contain;
   }
+  
+   @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/main-bg-desktop.jpg);
+    background-size: contain;
+  }
 }
