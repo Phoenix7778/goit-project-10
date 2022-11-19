@@ -83,11 +83,18 @@
 }
 
 .button-close-menu {
+    
     position: absolute;
     top: 30px;
     right: 26px;
     background-color: transparent;
     border: none;
+
+.menu-container.is-hidden .button-close-menu {
+    display: none;
+}
+
+
 
 @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
     top: 46px;
@@ -101,8 +108,10 @@
 
 .menu-container {
     position: fixed;
+    bottom: -150px;
     width: 100%;
     height: 100%;
+    z-index: 1;
     background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
 
     @media screen and (min-width: $desktop-min) {
@@ -110,15 +119,12 @@
     }
 }
 
-.menu-container.button-close-menu {
-    display: none;
-}
 
-// .is-hidden {
-//     opacity: 0;
-//     pointer-events: none;
-//     visibility: hidden;
-// }
+.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
 
 .menu-link {
     font-weight: 700;
@@ -130,4 +136,8 @@
     &:focus {
     border-bottom: 1px solid $green-text-color;
         }
+
+@media screen and (min-width: $desktop-min) {
+    display: none;   
+}
 }
