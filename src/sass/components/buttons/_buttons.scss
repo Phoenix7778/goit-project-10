@@ -24,6 +24,7 @@
   background-color: $green-text-color;
   display: block;
   align-items: center;
+
   @include tablet {
     width: 306px;
     height: 70px;
