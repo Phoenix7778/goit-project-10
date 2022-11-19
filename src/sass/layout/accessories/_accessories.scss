@@ -1,1 +1,72 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+// .accessories {
+//     background-color: blue;
+// }
+.accessories-products-list__wrap {
+    position: relative;
+    overflow: hidden;
+    width: 285px;
+    margin-bottom: 8px;
+    border-radius: 12px;
+    border: 1px solid #86E543;
+    border-radius: 12px;
+    box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+}
+.accessories-products-list__text {
+position: absolute;
+top:0;
+left:0;
+width: 100%;
+height: 100%;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 16px;
+padding-bottom: 52px;
+font-weight: 400;
+font-size: 14px;
+line-height: 1.14;
+background-color: rgba(134, 229, 67, 0.2);
+color: black;
+transform: translateY(100%);
+transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+.accessories-products-list__item:hover &,
+.accessories-products-list__item:focus & {
+    transform: translateY(0);
+}
+}
+
+
+
+
+
+
+.accessories-products-list__text-wrap {
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.box-prices {
+    display: flex;
+    margin-top: 8px;
+    justify-content: space-between;
+}
+// .box-prices__old-price:not(:last-child) {
+//     margin-right: 80px;
+    
+// }
+.wrap-contents {
+    width: 261px;
+}
+.wrap-contents__title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 1.18;
+    color: #86E543;
+}
+
+
+.accessories-products-list__link {
+    display: inline-block;
+}
+.accessories-products-list__item:not(:last-child) {
+    margin-bottom: 30px;
+}
