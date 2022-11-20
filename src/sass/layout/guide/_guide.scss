@@ -12,6 +12,7 @@ ol {
     padding-left: 0;
     padding-right: 0;
   }
+}
 
 .base {
   @media screen and (max-width: 479px) {
@@ -57,7 +58,7 @@ ol {
   @media screen and (min-width: 768px) {
     margin-left: 40px;
   }
-  
+
   @media screen and (min-width: 1280px) {
     display: flex;
     gap: 96px;
