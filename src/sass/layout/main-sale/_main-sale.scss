@@ -1,7 +1,21 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+
 .main-sale {
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/bg1-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.container-sale {
+  @include tablet {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
   @include desktop {
-    background-image: url(../images/img-bg/main-sale-bg-desktop.jpg);
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
@@ -11,18 +25,101 @@
   line-height: 1.17;
 
   color: $white-text-color;
-  @media screen and ($tablet-min) {
+  margin-left: 63px;
+  margin-bottom: 35px;
+
+  @include tablet {
     font-size: 56px;
     line-height: 1.18;
+    margin-bottom: 51px;
   }
+  @include desktop {
+    margin-bottom: 43px;
+    margin-left: 102px;
+  }
+}
+
+.sale-menu__item:nth-child(odd) {
+  @media screen and (max-width: $mobile-max) {
+    display: flex;
+    flex-basis: 100%;
+    margin-bottom: 24px;
+  }
+}
+
+.sale-menu__item:nth-child(even) {
+  @media screen and (max-width: $mobile-max) {
+    display: none;
+  }
+}
+
+.sale-menu {
+  margin-bottom: 24px;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  @include desktop {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    gap: 20px;
+  }
+}
+
+.sale-menu__item {
+  @include tablet {
+    flex-basis: calc((100% - 38px) / 2);
+    margin-bottom: 32px;
+  }
+  @include desktop {
+    flex-basis: calc((100% - 80px) / 4);
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+  &:nth-child(odd) {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+      margin-right: 38px;
+    }
+  }
+
+  &:nth-child(n + 7) {
+    @media screen and (max-width: $tablet-max) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.wrap-img {
+  display: block;
+  border: 1px solid transparent;
+  border-radius: 12px;
+  overflow: hidden;
+  @include tablet {
+    width: 285px;
+  }
+}
+
+.wrap-content {
+  padding-top: 8px;
+  padding-bottom: 20px;
 }
 
 .wrap-content__title {
   font-weight: 600;
   font-size: 22px;
-  line-height: 1.18px;
+  line-height: 1.18;
+  max-width: 261px;
+  margin-bottom: 8px;
 
   color: $green-text-color;
+}
+
+.box-prices {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .box-prices__old-price {
@@ -39,4 +136,10 @@
   font-size: 20px;
   line-height: 1;
   color: $green-text-color;
+}
+
+.btn-sale {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
