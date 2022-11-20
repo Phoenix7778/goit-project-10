@@ -6,19 +6,27 @@ $grey-text-color: #8d9289;
 $teal-text-color: #01383a;
 
 // Тінь кнопок
-$green-btn-shadow: rgba(134, 229, 67, 0.5),
+$green-btn-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
   0px 4px 10px rgba(255, 255, 255, 0.1);
-$white-btn-shadow: rgba(255, 255, 255, 0.5),
+$secondary-btn-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+  0px 4px 20px rgba(134, 229, 67, 0.4);
+$white-btn-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
   0px 4px 10px rgba(134, 229, 67, 0.1);
-$like-btn-shadow: rgba(134, 229, 67, 0.1), 0px 4px 20px rgba(134, 229, 67, 0.4);
+$sale-btn-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1),
+  0px 4px 20px rgba(255, 255, 255, 0.4);
+$like-btn-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
+  0px 4px 20px rgba(134, 229, 67, 0.4);
 
 // Тінь лінії
 $line-shadow: rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5),
   0px 4px 4px rgba(17, 168, 26, 0.2);
 
 // Розміри екранів
-$mobile-min: 320px;
+$mobile-min: 480px;
 $mobile-max: 767.5px;
 $tablet-min: 768px;
 $tablet-max: 1279.5px;
 $desktop-min: 1280px;
+
+// Перехід на тіні для hover/focus
+$transition-shadow: box-shadow 250ms cubic-bezier(0.21, 0.65, 0.66, 0.12);
