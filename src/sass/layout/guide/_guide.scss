@@ -9,12 +9,8 @@ ol {
   margin: 0;
 }
 
-.container {
+.container-guide {
   position: relative;
-  @media screen and (min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
 }
 
 .guide__title {
