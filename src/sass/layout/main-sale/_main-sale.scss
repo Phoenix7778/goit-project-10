@@ -1,11 +1,6 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 
-
 .container-sale {
-  @media screen and (min-width: $mobile-min) {
-    padding-left: 17px;
-    padding-right: 18px;
-  }
   @include tablet {
     padding-left: 80px;
     padding-right: 80px;
@@ -22,7 +17,9 @@
   line-height: 1.17;
 
   color: $white-text-color;
+  margin-left: 63px;
   margin-bottom: 35px;
+
   @include tablet {
     font-size: 56px;
     line-height: 1.18;
@@ -30,12 +27,14 @@
   }
   @include desktop {
     margin-bottom: 43px;
+    margin-left: 102px;
   }
 }
 
 .sale-menu__item:nth-child(odd) {
   @media screen and (max-width: $mobile-max) {
     display: flex;
+    flex-basis: 100%;
     margin-bottom: 24px;
   }
 }
@@ -47,6 +46,7 @@
 }
 
 .sale-menu {
+  margin-bottom: 24px;
   @include tablet {
     display: flex;
     flex-wrap: wrap;
@@ -71,7 +71,7 @@
     margin-bottom: 0;
   }
   &:nth-child(odd) {
-    @media screen and (max-width: $tablet-max) {
+    @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
       margin-right: 38px;
     }
   }
@@ -83,7 +83,7 @@
   }
 }
 
-.sale-menu__img {
+.wrap-img {
   display: block;
   border: 1px solid transparent;
   border-radius: 12px;
@@ -110,7 +110,7 @@
 
 .box-prices {
   display: flex;
-  gap: 80px;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -128,4 +128,10 @@
   font-size: 20px;
   line-height: 1;
   color: $green-text-color;
+}
+
+.btn-sale {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
