@@ -27,18 +27,17 @@
     text-transform: uppercase;
     color: $teal-text-color;
     background-color: $green-text-color;
+    transition: $transition-shadow;
+    &:hover,
+    &:focus {
+      box-shadow: $green-btn-shadow;
+    }
     @include tablet {
       min-width: 306px;
       height: 70px;
       font-size: 32px;
       line-height: calc(38 / 32);
     }
-    &:hover,
-    &:focus {
-      box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-        0px 4px 10px rgba(255, 255, 255, 0.1);
-    }
-
   }
   &--order {
     min-width: 173px;
@@ -49,16 +48,16 @@
     color: $green-text-color;
     background-color: $teal-text-color;
     border: 1px solid $green-text-color;
+    transition: $transition-shadow;
+    &:hover,
+    &:focus {
+      box-shadow: $secondary-btn-shadow;
+    }
     @include tablet {
       min-width: 306px;
       height: 70px;
       font-size: 32px;
       line-height: calc(38 / 32);
-    }
-    &:hover,
-    &:focus {
-      box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
-        0px 4px 20px rgba(134, 229, 67, 0.4);
     }
   }
   &--header {
@@ -69,17 +68,17 @@
     letter-spacing: -0.03em;
     color: $dark-text-color;
     background-color: $green-text-color;
+    transition: $transition-shadow;
+    &:hover,
+    &:focus {
+      box-shadow: $green-btn-shadow;
+    }
     @include desktop {
       min-width: 102px;
       height: 46px;
       font-size: 14px;
       line-height: 1;
       letter-spacing: 0;
-    }
-    &:hover,
-    &:focus {
-      box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-        0px 4px 10px rgba(255, 255, 255, 0.1);
     }
   }
   &--sale {
@@ -89,16 +88,16 @@
     color: $teal-text-color;
     font-size: 16px;
     line-height: calc(19 / 16);
+    transition: $transition-shadow;
+    &:hover,
+    &:focus {
+      box-shadow: $white-btn-shadow;
+    }
     @include tablet {
       min-width: 195px;
       height: 65px;
       font-size: 28px;
       line-height: calc(33 / 28);
-    }
-    &:hover,
-    &:focus {
-      box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
-        0px 4px 10px rgba(134, 229, 67, 0.1);
     }
   }
   &--contacts {
@@ -110,16 +109,16 @@
     text-transform: uppercase;
     color: $white-text-color;
     background-color: $teal-text-color;
+    transition: $transition-shadow;
+    &:hover,
+    &:focus {
+      box-shadow: $sale-btn-shadow;
+    }
     @include tablet {
       min-width: 306px;
       height: 70px;
       font-size: 32px;
       line-height: calc(38 / 32);
-    }
-    &:hover,
-    &:focus {
-      box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1),
-        0px 4px 20px rgba(255, 255, 255, 0.4);
     }
   }
   &--filter {
@@ -131,15 +130,15 @@
     color: $green-text-color;
     background-color: $teal-text-color;
     border: 1px solid $green-text-color;
+    transition: $transition-shadow;
     &:hover,
     &:focus {
-      box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
-        0px 4px 20px rgba(134, 229, 67, 0.4);
+      box-shadow: $secondary-btn-shadow;
     }
     &:active {
       color: $teal-text-color;
       background-color: $green-text-color;
-      box-shadow: 0px 4px 4px rgba(134, 229, 67, 0.2);
+      box-shadow: $secondary-btn-shadow;
     }
     @include tablet {
       min-width: 132px;
@@ -150,6 +149,10 @@
     }
   }
   &--like {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     min-width: 171px;
     height: 80px;
     font-size: 32px;
@@ -158,11 +161,14 @@
     color: $teal-text-color;
     background-color: $green-text-color;
     &:active {
-      box-shadow: 0px 4px 10px rgba(134, 229, 67, 0.1),
-        0px 4px 20px rgba(134, 229, 67, 0.4);
+      box-shadow: $like-btn-shadow;
     }
   }
   &--dislike {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
     min-width: 171px;
     height: 80px;
     font-size: 32px;
@@ -172,8 +178,7 @@
     background-color: $teal-text-color;
     border: 1px solid $green-text-color;
     &:active {
-      filter: 0px 4px 10px rgba(134, 229, 67, 0.1),
-        0px 4px 20px rgba(134, 229, 67, 0.4);
+      box-shadow: $like-btn-shadow;
     }
   }
 }
