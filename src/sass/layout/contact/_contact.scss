@@ -1,119 +1,128 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.contact {
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/bg2-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .container_contact {
-padding-left: 0;
-padding-right: 0;
+  padding-left: 0;
+  padding-right: 0;
 }
 
 .contact_title {
-margin-left: 16px;
-margin-bottom: 35px;
+  margin-left: 16px;
+  margin-bottom: 35px;
 }
 
 .contact_img {
-margin-bottom: 16px;
+  margin-bottom: 16px;
 }
 
 .contact_text-wrap {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
 .contact_text {
-padding-left: 16px;
-padding-right: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 .contact_text-mail {
-padding-left: 16px;
-padding-right: 16px;
-margin-top: 28px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-top: 28px;
 }
 
-.contact_item, .contact_mail-item, .contact_list {
-padding-left: 16px;
+.contact_item,
+.contact_mail-item,
+.contact_list {
+  padding-left: 16px;
 }
 
 .contact_mail-item {
-color: $grey-text-color;
+  color: $grey-text-color;
 }
 
 .contact_item-wrap {
-margin-bottom: 24px;
+  margin-bottom: 24px;
 }
 
-.contact_item, .contact_list-item {
-margin-bottom: 8px;
+.contact_item,
+.contact_list-item {
+  margin-bottom: 8px;
 }
 
 .contact_list-link {
-letter-spacing: 0.01em;
-text-transform: capitalize;  
-color: $grey-text-color;
+  letter-spacing: 0.01em;
+  text-transform: capitalize;
+  color: $grey-text-color;
 }
 
 .contact_form {
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form_accent {
-font-weight: 600;
-font-size: 24px;
-line-height: 1.17;
-color: $green-text-color;
-padding-left: 17px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $green-text-color;
+  padding-left: 17px;
 }
 
 .form_label {
-position: absolute;
-line-height: 1.25;
-transition: transform 250ms linear;
+  position: absolute;
+  line-height: 1.25;
+  transition: transform 250ms linear;
 }
 
 .form_label-accent {
-line-height: 1.25;
-color: #cdcdcd;
+  line-height: 1.25;
+  color: #cdcdcd;
 }
 
 .contact_form-field {
-margin-left: 16px;
-margin-right: 16px;
-margin-top: 24px;
-margin-bottom: 40px;
-display: flex;
-flex-direction: column;
+  margin-left: 16px;
+  margin-right: 16px;
+  margin-top: 24px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 .form_label-accent {
-margin-bottom: 4px;
+  margin-bottom: 4px;
 }
 
 .form_input {
-position: relative;
-background-color: inherit;
-border: none;
-border-bottom: 1px solid $green-text-color;
-color: $white-text-color;
+  position: relative;
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px solid $green-text-color;
+  color: $white-text-color;
 }
 
 .form_input:not(:placeholder-shown) + .form_label {
-transform: translateY(-100%);
+  transform: translateY(-100%);
 }
 
 .form_input:focus + .form_label {
-    transform: translateY(-100%);
-    }
+  transform: translateY(-100%);
+}
 
 .form_comment {
-background-color: inherit;
-height: 95px;
-border: 1px solid $green-text-color;
-border-radius: 0px;
-color: $white-text-color;
+  background-color: inherit;
+  height: 95px;
+  border: 1px solid $green-text-color;
+  border-radius: 0px;
+  color: $white-text-color;
 }
 
 .button--contacts {
-margin-left: auto;
-margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
-
-

@@ -1,9 +1,6 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 .guide {
-  background-image: url(/src/images/img-bg/bg-mobile.jpg);
-  //   background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: none;
 }
 
 .container {
@@ -32,8 +29,7 @@
 .guide__container {
   @media screen and (min-width: 768px) {
     margin-left: 40px;
- 
-}
+  }
 }
 
 .guide__subtitle {
@@ -51,7 +47,7 @@
     line-height: 1;
     color: #86e543;
     // margin-bottom: 32px;
-//   white-space: pre-wrap;
+    //   white-space: pre-wrap;
   }
 }
 
@@ -68,7 +64,7 @@
     font-size: 24px;
     line-height: 1;
     text-align: start;
-//   white-space: pre-wrap
+    //   white-space: pre-wrap
   }
 }
 

@@ -117,14 +117,8 @@ textarea {
 .section {
   padding-top: 40px;
   padding-bottom: 48px;
+  background-color: $teal-text-color;
 
-  @media screen and (min-width: $tablet-min) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
-.main-page {
   @media screen and (max-width: $mobile-max) {
     background-image: url(../images/img-bg/bg-mobile.jpg);
     background-size: cover;
@@ -137,9 +131,8 @@ textarea {
     background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: $desktop-min) {
-    background-image: url(../images/img-bg/main-bg-desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }

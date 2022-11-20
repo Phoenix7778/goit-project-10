@@ -1,5 +1,13 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 
+.main-sale {
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/bg1-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .container-sale {
   @include tablet {
     padding-left: 80px;
