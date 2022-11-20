@@ -1,8 +1,6 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 .guide {
-  background-image: url(/src/images/img-bg/bg-mobile.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-image: none;
 }
 
 ol {
@@ -14,13 +12,6 @@ ol {
     padding-left: 0;
     padding-right: 0;
   }
-
-  position: relative;
-  @media screen and (min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
 
 .base {
   @media screen and (max-width: 479px) {
@@ -66,6 +57,7 @@ ol {
   @media screen and (min-width: 768px) {
     margin-left: 40px;
   }
+  
   @media screen and (min-width: 1280px) {
     display: flex;
     gap: 96px;

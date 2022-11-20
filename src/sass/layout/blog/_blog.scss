@@ -1,1 +1,181 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.blog {
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/bg3-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.blog__container {
+  padding-left: 16px;
+  padding-right: 16px;
+
+  @media screen and (min-width: 768px) {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.blog__title {
+  margin-bottom: 31px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-left: 59px;
+    margin-bottom: 67px;
+    font-size: 56px;
+    line-height: 1.18;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-left: 102px;
+    margin-bottom: 75px;
+  }
+}
+
+.blog__list {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    gap: 40px;
+  }
+}
+
+.blog__item {
+  @media screen and (min-width: 1280px) {
+    position: relative;
+    margin-left: 508px;
+  }
+}
+
+.article__title {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 52px;
+  }
+}
+
+.article__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 40px;
+
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    display: block;
+  }
+}
+
+.article-img {
+  margin-bottom: 8px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    border-radius: 12px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 0;
+    left: -508px;
+  }
+}
+
+.article__attribute {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    gap: 32px;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  @media screen and (min-width: 1280px) {
+    flex-direction: row;
+    justify-content: space-between;
+
+    margin-bottom: 24px;
+  }
+}
+
+.article__author {
+  margin-bottom: 8px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+}
+
+.article__date {
+  margin-bottom: 16px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+
+  color: $grey-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+    font-size: 24px;
+  }
+}
+
+.article__text {
+  margin-bottom: 8px;
+
+  font-size: 16px;
+  line-height: 1.19;
+
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 16px;
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.article_link {
+  display: block;
+
+  text-align: right;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1;
+
+  color: $green-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+  }
+}
