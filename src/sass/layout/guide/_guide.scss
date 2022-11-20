@@ -1,1 +1,118 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.guide {
+  background-image: none;
+}
+
+.container {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.guide__title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 56px;
+    line-height: 1;
+  }
+}
+
+.guide__wrap {
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+}
+
+.guide__container {
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+  }
+}
+
+.guide__subtitle {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: $white-text-color;
+  @media screen and (max-width: 767px) {
+    margin-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1;
+    color: #86e543;
+    // margin-bottom: 32px;
+    //   white-space: pre-wrap;
+  }
+}
+
+.guide__datetime {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  color: $grey-text-color;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1;
+    text-align: start;
+    //   white-space: pre-wrap
+  }
+}
+
+ol {
+  margin: 0;
+}
+
+.guide__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+  }
+}
+
+.guide__text:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.guide__caption {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: $white-text-color;
+
+  @media screen and (min-width: 768px) {
+    font-size: 24px;
+    line-height: 1.17;
+    color: #86e543;
+  }
+}
+
+.guide__list {
+  @media screen and (max-width: 767.5px) {
+    padding-inline-start: 20px;
+    margin-bottom: 20px;
+  }
+}
+
+.content {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    color: #86e543;
+  }
+}
