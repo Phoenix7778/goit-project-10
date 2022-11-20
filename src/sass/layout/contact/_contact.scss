@@ -8,38 +8,80 @@
 }
 
 .container_contact {
-  padding-left: 0;
-  padding-right: 0;
+  @media screen and (max-width: $mobile-max) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
 
 .contact_title {
+  @media screen and (max-width: $mobile-max) {
   margin-left: 16px;
   margin-bottom: 35px;
+  }
+  @media screen and (min-width: $tablet-min) {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 1.18;
+  margin-left: 99px;
+  margin-bottom: 67px;
+  }
 }
 
 .contact_img {
   margin-bottom: 16px;
+  width: 100%;
+
+  @media screen and (max-width: $tablet-min) {
+    margin-bottom: 32px;
+  }
 }
 
 .contact_text-wrap {
   margin-bottom: 24px;
+
+  @media screen and (max-width: $tablet-min) {
+    margin-bottom: 32px;
+  }
 }
 
 .contact_text {
-  padding-left: 16px;
-  padding-right: 16px;
+  @media screen and (max-width: $mobile-max) {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
 }
 
 .contact_text-mail {
-  padding-left: 16px;
-  padding-right: 16px;
-  margin-top: 28px;
+  @media screen and (max-width: $mobile-max) {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 28px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    margin-top: 40px;
+  }
+
+}
+
+.contact_item-tab-wrap {
+display: flex;
+gap: 32px;
 }
 
 .contact_item,
 .contact_mail-item,
 .contact_list {
-  padding-left: 16px;
+  @media screen and (max-width: $mobile-max) {
+    padding-left: 16px;
+  }
+}
+
+.contact_item {
+  @media screen and (min-width: $tablet-min) {
+  font-size: 24px;
+  }
 }
 
 .contact_mail-item {
@@ -48,6 +90,10 @@
 
 .contact_item-wrap {
   margin-bottom: 24px;
+
+  @media screen and (min-width: $tablet-min) {
+  margin-bottom: 40px;
+  }
 }
 
 .contact_item,
@@ -64,25 +110,42 @@
 .contact_form {
   margin-left: auto;
   margin-right: auto;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .form_accent {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   color: $green-text-color;
   padding-left: 17px;
+
+  @media screen and (min-width: $tablet-min) {
+  font-size: 36px;
+  padding-left: 50px;
+  }
 }
 
 .form_label {
   position: absolute;
   line-height: 1.25;
   transition: transform 250ms linear;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 18px;
+    line-height: 1.11;
+    }
 }
 
 .form_label-accent {
   line-height: 1.25;
   color: #cdcdcd;
+
+  @media screen and (min-width: $tablet-min) {
+  font-size: 18px;
+  line-height: 1.11;
+  }
 }
 
 .contact_form-field {
@@ -92,6 +155,11 @@
   margin-bottom: 40px;
   display: flex;
   flex-direction: column;
+
+  @media screen and (min-width: $tablet-min) {
+  margin-left: 0;
+  margin-right: 0;
+  }
 }
 
 .form_label-accent {
@@ -120,9 +188,13 @@
   border: 1px solid $green-text-color;
   border-radius: 0px;
   color: $white-text-color;
+
+  @media screen and (min-width: $tablet-min) {
+  height: 120px;
+  }
 }
 
 .button--contacts {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  display: block;
 }
