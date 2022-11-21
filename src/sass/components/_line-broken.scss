@@ -1,0 +1,59 @@
+// Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.line-broken {
+  position: relative;
+  width: 100%;
+  height: 19px;
+  display: flex;
+  &__first-relative {
+    margin-top: 18px;
+    width: 30%;
+    height: 0;
+    border-bottom: 1px solid #7be34a;
+    box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  }
+  &__second-relative {
+    width: 0;
+    height: 19px;
+    border-left: 1px solid #7be34a;
+    box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  }
+  &__third-relative {
+    margin-top: 0;
+    width: 70%;
+    height: 0px;
+    border-top: 1px solid #7be34a;
+    box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+  }
+  &__second-line {
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 100%;
+    height: 36px;
+    display: flex;
+    @include tablet {
+      top: 8px;
+      left: 8px;
+    }
+  }
+  &__first-absolut {
+    margin-top: 18px;
+    width: 30%;
+    height: 0;
+    border-bottom: 1px solid #28780d;
+    box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  }
+  &__second-absolut {
+    width: 0;
+    height: 19px;
+    border-left: 1px solid #28780d;
+    box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  }
+  &__third-absolut {
+    margin-top: 0;
+    width: 70%;
+    height: 0px;
+    border-top: 1px solid #28780d;
+    box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+  }
+}

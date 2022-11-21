@@ -3,6 +3,7 @@ body {
 
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  
 
   @media screen and (min-width: $tablet-min) {
     font-size: 24px;
@@ -10,6 +11,10 @@ body {
 }
 
 body.modal-open {
+  overflow: hidden;
+}
+
+.no-scroll {
   overflow: hidden;
 }
 
@@ -27,7 +32,7 @@ ul {
 
 h1,
 h2 {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
 
@@ -80,8 +85,8 @@ textarea {
 }
 
 .container {
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 
@@ -117,14 +122,8 @@ textarea {
 .section {
   padding-top: 40px;
   padding-bottom: 48px;
+  background-color: $teal-text-color;
 
-  @media screen and (min-width: $tablet-min) {
-    padding-top: 120px;
-    padding-bottom: 120px;
-  }
-}
-
-.main-page {
   @media screen and (max-width: $mobile-max) {
     background-image: url(../images/img-bg/bg-mobile.jpg);
     background-size: cover;
@@ -137,9 +136,8 @@ textarea {
     background-repeat: no-repeat;
   }
 
-  @media screen and (min-width: $desktop-min) {
-    background-image: url(../images/img-bg/main-bg-desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 120px;
+    padding-bottom: 120px;
   }
 }
