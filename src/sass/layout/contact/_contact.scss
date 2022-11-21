@@ -19,12 +19,18 @@
   margin-left: 16px;
   margin-bottom: 35px;
   }
+
   @media screen and (min-width: $tablet-min) {
   font-weight: 500;
   font-size: 56px;
   line-height: 1.18;
   margin-left: 99px;
   margin-bottom: 67px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-left: 142px;
+    margin-bottom: 75px;
   }
 }
 
@@ -34,6 +40,17 @@
 
   @media screen and (max-width: $tablet-min) {
     margin-bottom: 32px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+  margin-bottom: 60px;
+  }
+}
+
+.contact_desktop-wrap {
+  @media screen and (min-width: $desktop-min) {
+    display: flex;
+    gap: 123px;
   }
 }
 
@@ -50,6 +67,10 @@
     padding-left: 16px;
     padding-right: 16px;
   }
+
+  @media screen and (min-width: $desktop-min) {
+  max-width: 488px;
+  }
 }
 
 .contact_text-mail {
@@ -63,11 +84,23 @@
     margin-top: 40px;
   }
 
+  @media screen and (min-width: $desktop-min) {
+  margin-bottom: 40px;
+  }
 }
 
 .contact_item-tab-wrap {
+@media screen and (min-width: $tablet-min) {
+  display: flex;
+  gap: 32px;
+  }
+
+@media screen and (min-width: $desktop-min) {
 display: flex;
-gap: 32px;
+flex-direction: column;
+gap: 40px;
+}
+
 }
 
 .contact_item,
@@ -81,6 +114,7 @@ gap: 32px;
 .contact_item {
   @media screen and (min-width: $tablet-min) {
   font-size: 24px;
+  line-height: 1.17;
   }
 }
 
@@ -93,6 +127,10 @@ gap: 32px;
 
   @media screen and (min-width: $tablet-min) {
   margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+  margin-bottom: 0;
   }
 }
 
@@ -110,8 +148,17 @@ gap: 32px;
 .contact_form {
   margin-left: auto;
   margin-right: auto;
-  padding-left: 50px;
-  padding-right: 50px;
+
+  @media screen and (min-width: $tablet-min) {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+  padding-left: 0;
+  padding-right: 0;
+  }
 }
 
 .form_accent {
@@ -124,6 +171,10 @@ gap: 32px;
   @media screen and (min-width: $tablet-min) {
   font-size: 36px;
   padding-left: 50px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+  padding-left: 0;
   }
 }
 
@@ -172,6 +223,10 @@ gap: 32px;
   border: none;
   border-bottom: 1px solid $green-text-color;
   color: $white-text-color;
+
+  @media screen and (min-width: $desktop-min) {
+  min-width: 590px;
+  }
 }
 
 .form_input:not(:placeholder-shown) + .form_label {
@@ -191,6 +246,10 @@ gap: 32px;
 
   @media screen and (min-width: $tablet-min) {
   height: 120px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+  margin-bottom: 46px;
   }
 }
 
