@@ -94,8 +94,10 @@
     height: 100vh;
     z-index: 1;
     transform: translateY(100%);
-    transition: transform 250ms ease-in-out;
-    overflow: scroll;
+    opacity: 0;
+    transition: transform 250ms ease-in-out,
+                opacity 250ms ease-in-out;
+
  
     background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
     @media (min-device-pixel-ratio: 2),
@@ -121,6 +123,7 @@
 
 .menu-container.is-open {
     transform: translateY(0);
+    opacity: 1;
 }
 
 .menu-button .icon-close {
@@ -170,4 +173,7 @@ margin-bottom: 40px;
 }
 }
 
+.no-scroll {
+    overflow: hidden;
+  }
   
