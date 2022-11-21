@@ -218,7 +218,6 @@ textarea {
 
 .footer {
   font-family: "Roboto", sans-serif;
-  text-align: center;
   padding: 40px 0;
   background: #001414;
   color: #ffffff;
@@ -240,13 +239,20 @@ textarea {
   }
 }
 
+@media screen and (min-width: 320px) {
+  .logo {
+    margin-left: 16px;
+  }
+}
 @media screen and (min-width: 768px) {
   .logo {
+    width: 116px;
     margin-right: 61px;
   }
 }
 @media screen and (min-width: 1280px) {
   .logo {
+    width: 187px;
     margin-right: 118px;
   }
 }
@@ -327,6 +333,11 @@ textarea {
 
 .footer__icon {
   justify-content: center;
+}
+@media screen and (min-width: 768px) {
+  .footer__icon {
+    display: flex;
+  }
 }
 
 .footer-icon__item {
