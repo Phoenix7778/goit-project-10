@@ -6,9 +6,9 @@
             <li class="header__item">
                 <a class="header__link" href="./all-accessories.html">Accessories</a>
             </li>
-            <!-- <li class="header__item">
+            <li class="header__item">
                 <a class="header__link" href="./take-order.html">Take order</a>
-            </li> -->
+            </li>
             <li class="header__item">
                 <a class="header__link" href="./contacts.html">Contact</a>
             </li>
@@ -17,23 +17,18 @@
             </li>
         </ul>
     </nav>
-    <button class="menu-toggle js-open-menu button-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-        <svg width="54" height="36">
-            <use href="./images/sprite/symbol-defs.svg#icon-eva_menu-outline"></use>
+    <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"data-menu-button>
+        <svg width="54" height="36" aria-label="Перемикач мобільного меню">
+            <use  class="icon-open" href="./images/sprite/symbol-defs.svg#icon-eva_menu-outline"></use>
+            <use class="icon-close" href="./images/sprite/symbol-defs.svg#icon-akar-icons_cross"></use>
         </svg>
     </button>
     <button type="button" class="button button--header">
         <a class="header__button" href="./all-accessories.html">Shop now</a>
     </button>
 
-    <button class="menu-toggle js-close-menu button-close-menu">
-        <svg width="36" height="36">
-            <use href="./images/sprite/symbol-defs.svg#icon-akar-icons_cross"></use>
-        </svg>
-    </button>
-
 </header>
-<div class="menu-container js-menu-container" id="mobile-menu">
+<div class="menu-container" id="menu-container" data-menu>
     
     <ul class="menu__list">
         <li class="menu__item">

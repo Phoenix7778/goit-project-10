@@ -3,6 +3,7 @@ body {
 
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
+  
 
   @media screen and (min-width: $tablet-min) {
     font-size: 24px;
@@ -12,6 +13,8 @@ body {
 body.modal-open {
   overflow: hidden;
 }
+
+
 
 h1,
 h2,
@@ -80,8 +83,8 @@ textarea {
 }
 
 .container {
-  padding-left: 17px;
-  padding-right: 17px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin-left: auto;
   margin-right: auto;
 

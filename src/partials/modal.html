@@ -1,0 +1,49 @@
+<!-- <a href="#" class="js-open-modal modal-href" data-modal="buy-it-now">Открыть окно 1</a>
+<a href="#" class="js-open-modal modal-href" data-modal="add-to-cart">Открыть окно 2</a>
+<a href="#" class="js-open-modal modal-href" data-modal="modal-send">Открыть окно 3</a>
+ -->
+
+<!-- Несколько модальных окон -->
+
+
+<div class="modal js-modal" data-modal="buy-it-now">
+
+    <button class="modal__btn js-modal-close" type="button">
+        <svg class="modal-icon" width="40" height="40">
+            <use href="./images/sprite/symbol-defs.svg#icon-charm_circle-cross"></use>
+        </svg>
+    </button>
+
+    <p class="modal__title modal__title-buy-it-now">Thank you <br> for your order! <br> We will contact you soon!</p>
+
+    <a class="modal__link button button--base " href="./all-accessories.html">KEEP SHOPPING</a>
+
+</div>
+
+<div class="modal js-modal" data-modal="add-to-cart">
+
+    <button class="modal__btn js-modal-close" type="button">
+        <svg class="modal-icon" width="40" height="40">
+            <use href="./images/sprite/symbol-defs.svg#icon-charm_circle-cross"></use>
+        </svg>
+    </button>
+
+    <p class="modal__title modal__title-add-to-cart ">Excellent choice! <br> Let's move on <br> to the checkout!</p>
+
+    <a class="modal__link button button--base " href="./index.html">Let's go!</a>
+</div>
+
+<div class="modal js-modal" data-modal="modal-send">
+    <button class="modal__btn js-modal-close" type="button">
+        <svg class="modal-icon" width="40" height="40">
+            <use href="./images/sprite/symbol-defs.svg#icon-charm_circle-cross"></use>
+        </svg>
+    </button>
+
+    <p class="modal__title modal__title-modal-send">Thank you <br> for your message! <br> We will contact you soon!</p>
+
+    <a class="modal__link button button--base " href="./index.html">ok</a>
+</div>
+
+<!-- Подложка под модальным окном -->
+<div class="overlay js-overlay-modal"></div>

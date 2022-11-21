@@ -1,1 +1,126 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.footer {
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 40px 0;
+    background: #001414;
+    color: #ffffff;
+}
+
+.footer-container {
+    display: block;
+    margin-right: auto;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+    @media (min-width: 768px) and (max-width: 1279px) {
+        display: flex;
+        justify-content: center;
+        // flex-wrap: wrap;
+        // gap: 30px 165px;
+        // gap: 60px 165px;
+        text-align: left;
+            align-items: baseline;
+    }
+
+    @media screen and (min-width: 1280px) {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        align-items: baseline;
+    }
+}
+
+.logofooter {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.map {
+    display: block;
+    margin: 0;
+    padding: 0px;
+    list-style: none;
+}
+
+.map__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 16px;
+    color: #ffffff;
+    list-style: none;
+    padding-bottom: 16px;
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}
+
+.box {
+    margin-bottom: 16px;
+}
+
+.address__field {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    font-style: normal;
+}
+
+.address__link {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #ffffff;
+    color: #8D9289;
+    font-style: normal;
+}
+
+.socials {
+    margin-top: 106px;
+        @media (min-width: 768px) {
+            margin-top: 0px;
+            padding: 0;
+        }
+}
+
+.footer-icon {
+    padding: 0px;
+    // gap: 32px;
+    @media (min-width: 768px) {
+        display: flex;       
+    }
+}
+
+.footer-icon__link {
+    padding: 0px;
+    color: #001414;
+    background-color: #ffffff;
+    border: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    gap: 16px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+     &:hover,
+     &:focus {
+        background-color: #2196F3;
+        }
+}
+
+.footer-icon__icons {
+    fill: currentColor;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    &:hover,
+    &:focus {
+        color: #2196F3;
+    }
+}

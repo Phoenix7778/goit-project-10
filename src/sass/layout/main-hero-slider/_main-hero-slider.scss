@@ -1,1 +1,191 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.hero {
+  background-image: url(../images/img-hero+slider/keyboard_mobile.png),
+    url(../images/img-hero+slider/headphones_mobile.png),
+    url(../images/img-hero+slider/computer_mouse_mobile.png),
+    url(../images/img-hero+slider/hero.jpg);
+
+  background-blend-mode: luminosity, hard-light;
+  background-repeat: no-repeat;
+  background-size: 88px, 186px, 99px, cover;
+  background-position: top 394px right 73px, top -48px right 0px,
+    top 58px right 203px, top 0px right;
+  height: 497px;
+  padding-top: 180px;
+  padding-bottom: 102px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 480px) {
+    background-image: url(../images/img-hero+slider/keyboard_mobile.png),
+      url(../images/img-hero+slider/headphones_mobile.png),
+      url(../images/img-hero+slider/computer_mouse_mobile.png),
+      url(../images/img-hero+slider/hero.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/img-hero+slider/keyboard_2x_mobile.png),
+          url(../images/img-hero+slider/headphones_2x_mobile.png),
+          url(../images/img-hero+slider/computer_mouse_2x_mobile.png),
+          url(../images/img-hero+slider/hero2x.jpg);
+      }
+    }
+
+    background-blend-mode: luminosity, hard-light;
+    background-repeat: no-repeat;
+    background-size: 88px, 186px, 99px, cover;
+    background-position: top 394px right 73px, top -48px right 0px,
+      top 58px right 203px, top 0px right;
+    height: 497px;
+    padding-top: 180px;
+    padding-bottom: 102px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: url(../images/img-hero+slider/keyboard_tablet.png),
+      url(../images/img-hero+slider/headphones_tablet.png),
+      url(../images/img-hero+slider/computer_mouse_tablet.png),
+      url(../images/img-hero+slider/hero.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/img-hero+slider/keyboard_2x_tablet.png),
+          url(../images/img-hero+slider/headphones_2x_tablet.png),
+          url(../images/img-hero+slider/computer_mouse_2x_tablet.png),
+          url(../images/img-hero+slider/hero2x.jpg);
+      }
+    }
+
+    background-blend-mode: luminosity, hard-light;
+    background-repeat: no-repeat;
+    background-size: 143px, 223px, 165px, cover;
+    background-position: top 479px right 188px, top 226px right 19px,
+      top 49px right 165px, top 0px right;
+    height: 724px;
+    padding-top: 154px;
+    padding-bottom: 208px;
+    margin: 0 auto;
+  }
+
+  @media screen and (min-width: 1280px) {
+    background-image: url(../images/img-hero+slider/keyboard.png),
+      url(../images/img-hero+slider/headphones.png),
+      url(../images/img-hero+slider/computer_mouse.png),
+      url(../images/img-hero+slider/hero.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      & {
+        background-image: url(../images/img-hero+slider/keyboard_2x.png),
+          url(../images/img-hero+slider/headphones_2x.png),
+          url(../images/img-hero+slider/computer_mouse_2x.png),
+          url(../images/img-hero+slider/hero2x.jpg);
+      }
+    }
+
+    background-blend-mode: luminosity, hard-light;
+    background-repeat: no-repeat;
+    background-size: 230px, 335px, 220px, 100% 860px;
+    background-position: top 430px right 447px, top 154px right 90px,
+      top 69px right 458px, top -136px center;
+    height: 724px;
+    padding-top: 160px;
+    padding-bottom: 209px;
+    margin: 0 auto;
+  }
+}
+
+.hero__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.18;
+  color: #ffffff;
+  margin-bottom: 25px;
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.17;
+    color: #ffffff;
+    width: 388px;
+    margin-bottom: 94px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1280px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 1.17;
+    color: #ffffff;
+    width: 515px;
+    margin-bottom: 40px;
+    text-align: left;
+  }
+}
+
+.link__hero {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: right;
+  text-transform: uppercase;
+  color: #01383a;
+  background: #86e543;
+  border-radius: 16px;
+  padding: 16px 20px;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
+      0px 4px 10px rgba(255, 255, 255, 0.1);
+  }
+  @media screen and (min-width: 768px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.18;
+    text-align: right;
+    text-transform: uppercase;
+    color: #01383a;
+    background: #86e543;
+    border-radius: 16px;
+    padding: 16px 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 1.18;
+    text-align: right;
+    text-transform: uppercase;
+    color: #01383a;
+    background: #86e543;
+    border-radius: 16px;
+    padding: 16px 20px;
+  }
+}
+
+.hero__container {
+  text-align: center;
+  @media screen and (min-width: 768px) {
+    margin-left: 40px;
+    text-align: left;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-left: 142px;
+    text-align: left;
+  }
+}
