@@ -30,3 +30,14 @@ $desktop-min: 1280px;
 
 // Перехід на тіні для hover/focus
 $transition-shadow: box-shadow 250ms cubic-bezier(0.21, 0.65, 0.66, 0.12);
+
+// для ломаной линии ОБЩИЕ
+$line-height-mobile: 7px;
+$line-height-tablet: 19px;
+
+// для ломаной линии SALE
+$line-distance-sale-mobile: 133px;
+$line-margin-sale-mobile: -16px;
+$line-distance-sale-tablet: 324px;
+$line-margin-sale-tablet: -80px;
+$line-margin-sale-desktop: -40px;
