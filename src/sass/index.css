@@ -231,7 +231,7 @@ textarea {
   padding: 0px;
   list-style: none;
 }
-@media (min-width: 768px) and (max-width: 1279px) {
+@media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
     justify-content: center;
@@ -239,12 +239,15 @@ textarea {
     align-items: baseline;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .logo {
+    margin-right: 61px;
+  }
+}
 @media screen and (min-width: 1280px) {
-  .footer-container {
-    display: flex;
-    justify-content: center;
-    text-align: left;
-    align-items: baseline;
+  .logo {
+    margin-right: 118px;
   }
 }
 
@@ -255,6 +258,17 @@ textarea {
   line-height: 28px;
   text-align: center;
   color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .holder {
+    margin-right: 89px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .holder {
+    margin-right: 217px;
+  }
 }
 
 .map {
@@ -300,26 +314,32 @@ textarea {
   font-style: normal;
 }
 
-.socials {
-  margin-top: 106px;
-}
-@media (min-width: 768px) {
+@media screen and (min-width: 768px) {
   .socials {
-    margin-top: 0px;
-    padding: 0;
+    margin-right: 73px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .socials {
+    margin-right: 281px;
   }
 }
 
-.footer-icon {
-  padding: 0px;
+.footer__icon {
+  justify-content: center;
 }
-@media (min-width: 768px) {
-  .footer-icon {
-    display: flex;
-  }
+
+.footer-icon__item {
+  display: flex;
+  width: 24px;
+  height: 24px;
+  margin-bottom: 16px;
 }
 
 .footer-icon__link {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   padding: 0px;
   color: #001414;
   background-color: #ffffff;
@@ -335,7 +355,10 @@ textarea {
 }
 
 .footer-icon__icons {
+  justify-content: center;
+  align-items: center;
   fill: currentColor;
+  text-align: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer-icon__icons:hover, .footer-icon__icons:focus {
