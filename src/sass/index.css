@@ -248,6 +248,10 @@ textarea {
   }
 }
 
+.footer__inner {
+  display: flex;
+}
+
 .logofooter {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
@@ -271,6 +275,7 @@ textarea {
   line-height: 16px;
   color: #ffffff;
   list-style: none;
+  padding-bottom: 16px;
 }
 .map__link:hover, .map__link:focus {
   color: #2196F3;
@@ -286,6 +291,7 @@ textarea {
   font-size: 16px;
   line-height: 19px;
   color: #ffffff;
+  font-style: normal;
 }
 
 .address__link {
@@ -295,6 +301,7 @@ textarea {
   line-height: 19px;
   color: #ffffff;
   color: #8D9289;
+  font-style: normal;
 }
 
 .socials {
