@@ -95,7 +95,7 @@
     z-index: 1;
     transform: translateY(100%);
     transition: transform 250ms ease-in-out;
-    overflow-y: scroll;
+    overflow: scroll;
  
     background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
     @media (min-device-pixel-ratio: 2),
