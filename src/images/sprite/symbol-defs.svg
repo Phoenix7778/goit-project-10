@@ -25,5 +25,4 @@
 <symbol id="icon-charm_circle-cross" viewBox="0 0 32 32">
 <path fill="none" stroke="#86e543" style="stroke: var(--color1, #86e543)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="1.2" d="M20.5 11.5l-9 9M11.5 11.5l9 9M16 28.5c6.904 0 12.5-5.597 12.5-12.5s-5.597-12.5-12.5-12.5c-6.904 0-12.5 5.597-12.5 12.5s5.597 12.5 12.5 12.5z"/>
 </symbol>
-</defs>
 </svg>
