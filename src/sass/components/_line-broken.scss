@@ -1,37 +1,51 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 // бордерами и тенями
 .line-broken {
-  margin-top: 50px;
   position: relative;
-  width: 100%;
-  height: 19px;
+  margin-left: $line-margin-sale-mobile;
+  margin-right: $line-margin-sale-mobile;
+  width: calc(100% - (2 * $line-margin-sale-mobile));
   display: flex;
+  @include desktop {
+    margin-left: -40px;
+    margin-right: -40px;
+    width: calc(100% + (2 * 40px));
+  }
   &__first-relative {
-    margin-top: 18px;
-    width: 30%;
+    margin-top: calc($line-height-mobile - 1px);
+    width: $line-distance-sale-mobile;
     height: 0;
     border-bottom: 1px solid #7be34a;
     box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+    @include desktop {
+      width: 324px;
+      margin-top: calc(19px - 1px);
+    }
   }
   &__second-relative {
     width: 0;
-    height: 19px;
+    height: $line-height-mobile;
     border-left: 1px solid #7be34a;
     box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+    @include desktop {
+      height: 19px;
+    }
   }
   &__third-relative {
     margin-top: 0;
-    width: 70%;
+    width: calc(100% - $line-distance-sale-mobile);
     height: 0px;
     border-top: 1px solid #7be34a;
     box-shadow: 0px 4px 25px rgba(123, 227, 74, 0.25);
+    @include desktop {
+      width: calc(100% - 324px);
+    }
   }
   &__second-line {
     position: absolute;
     top: 4px;
     left: 4px;
     width: 100%;
-    height: 36px;
     display: flex;
     @include tablet {
       top: 8px;
@@ -39,24 +53,36 @@
     }
   }
   &__first-absolut {
-    margin-top: 18px;
-    width: 30%;
+    margin-top: calc($line-height-mobile - 1px);
+    margin-left: -4px;
+    width: calc($line-distance-sale-mobile + 4px);
     height: 0;
     border-bottom: 1px solid #28780d;
     box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+    @include tablet {
+      margin-left: -8px;
+      width: calc(324px + 8px);
+      margin-top: calc(19px - 1px);
+    }
   }
   &__second-absolut {
     width: 0;
-    height: 19px;
+    height: $line-height-mobile;
     border-left: 1px solid #28780d;
     box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+    @include desktop {
+      height: 19px;
+    }
   }
   &__third-absolut {
     margin-top: 0;
-    width: 70%;
+    width: calc(100% - ($line-distance-sale-mobile + 4px));
     height: 0px;
     border-top: 1px solid #28780d;
     box-shadow: 0px 4px 25px rgba(40, 120, 13, 0.25);
+    @include tablet {
+      width: calc(100% - (324px + 8px + 1px));
+    }
   }
 }
 

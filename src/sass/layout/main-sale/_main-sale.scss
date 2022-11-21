@@ -15,7 +15,7 @@
 
 .main-sale__title {
   margin-left: 63px;
-  margin-bottom: 35px;
+  margin-bottom: 0;
   @media screen and (min-width: 420px) {
     margin-left: 144px;
   }
@@ -23,16 +23,17 @@
   @include tablet {
     font-size: 56px;
     line-height: 1.18;
-    margin-bottom: 51px;
+    margin-bottom: 0;
     margin-left: 63px;
   }
   @include desktop {
-    margin-bottom: 43px;
+    margin-bottom: 0;
     margin-left: 102px;
   }
 }
 
 .sale-menu {
+  margin-top: 16px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
