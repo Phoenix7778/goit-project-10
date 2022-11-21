@@ -1,35 +1,11 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
-.blog {
-  @media screen and (min-width: $desktop-min) {
-    background-image: url(../images/img-bg/bg3-desktop.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
-}
-
-.blog__container {
-  padding-left: 16px;
-  padding-right: 16px;
-
-  @media screen and (min-width: 768px) {
-    padding-left: 40px;
-    padding-right: 40px;
-  }
-}
 
 .blog__title {
   margin-bottom: 31px;
 
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 1.17;
-
-  color: $white-text-color;
-
   @media screen and (min-width: 768px) {
     margin-left: 59px;
     margin-bottom: 67px;
-    font-size: 56px;
     line-height: 1.18;
   }
 
@@ -63,8 +39,6 @@
   font-size: 24px;
   line-height: 1.17;
 
-  color: $white-text-color;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 40px;
     font-size: 56px;
@@ -89,8 +63,20 @@
   }
 }
 
+.img__wrap {
+  @media screen and (max-width: 479px) {
+    width: auto;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+}
+
 .article-img {
   margin-bottom: 8px;
+
+  @media screen and (max-width: 479px) {
+    width: 100vw;
+  }
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
@@ -124,14 +110,10 @@
   margin-bottom: 8px;
 
   font-weight: 500;
-  font-size: 16px;
   line-height: 1;
-
-  color: $white-text-color;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-    font-size: 24px;
   }
 }
 
@@ -139,29 +121,20 @@
   margin-bottom: 16px;
 
   font-weight: 500;
-  font-size: 16px;
   line-height: 1;
 
   color: $grey-text-color;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 0;
-    font-size: 24px;
   }
 }
 
 .article__text {
   margin-bottom: 8px;
 
-  font-size: 16px;
-  line-height: 1.19;
-
-  color: $white-text-color;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 16px;
-    font-size: 24px;
-    line-height: 1.17;
   }
 }
 
@@ -170,12 +143,7 @@
 
   text-align: right;
   font-weight: 500;
-  font-size: 16px;
   line-height: 1;
 
   color: $green-text-color;
-
-  @media screen and (min-width: 768px) {
-    font-size: 24px;
-  }
 }
