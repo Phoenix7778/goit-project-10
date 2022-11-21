@@ -9,15 +9,18 @@
 
 .footer-container {
     display: block;
+    margin-right: auto;
     margin: 0;
     padding: 0px;
     list-style: none;
     @media (min-width: 768px) and (max-width: 1279px) {
         display: flex;
         justify-content: center;
-        flex-wrap: wrap;
-        gap: 30px 165px;
-        gap: 60px 165px;
+        // flex-wrap: wrap;
+        // gap: 30px 165px;
+        // gap: 60px 165px;
+        text-align: left;
+            align-items: baseline;
     }
 
     @media screen and (min-width: 1280px) {
@@ -26,10 +29,6 @@
         text-align: left;
         align-items: baseline;
     }
-}
-
-.footer__inner {
- display: flex;
 }
 
 .logofooter {
