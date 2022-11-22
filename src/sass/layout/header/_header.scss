@@ -1,19 +1,22 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 .header {
     position: relative;
-     padding: 24px 0;
-     background: $teal-text-color;
-     box-shadow:  0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+    padding: 24px 0;
+    background: $teal-text-color;
+    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
 
-@media screen and (min-width: $tablet-min) {
-    padding: 40px 0;    
-}
+    z-index: 40;
+
+    @media screen and (min-width: $tablet-min) {
+        padding: 40px 0;
+    }
 }
 
 .header__overlay {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 40;
 }
 
 .logo {
@@ -28,20 +31,20 @@
 
 
     @media screen and (min-width: $desktop-min) {
-        width: 121px;   
-       }
+        width: 121px;
+    }
 }
 
 .header__nav {
     @media screen and (max-width: $tablet-max) {
-    display: none;    
+        display: none;
     }
 }
 
 .header__list {
     @media screen and (min-width: $desktop-min) {
-        display: flex;    
-        }  
+        display: flex;
+    }
 }
 
 .header__item:not(:last-child) {
@@ -59,10 +62,11 @@
     font-size: 16px;
     line-height: 1;
     color: $white-text-color;
+
     &:hover,
     &:focus {
-   border-bottom: 1px solid $green-text-color;
-        }
+        border-bottom: 1px solid $green-text-color;
+    }
 }
 
 .header__button {
@@ -71,7 +75,7 @@
 
 .button--header {
     @media screen and (max-width: $mobile-max) {
-     display: none;   
+        display: none;
     }
 }
 
@@ -81,13 +85,14 @@
     background-color: transparent;
     margin: 0;
     padding: 0;
+
     @media screen and (min-width: $desktop-min) {
-    display: none;    
+        display: none;
     }
 }
 
 .menu-container {
-    box-shadow:  0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
     position: absolute;
     top: 107px;
     width: 100vw;
@@ -96,28 +101,31 @@
     transform: translateY(100%);
     opacity: 0;
     transition: transform 250ms ease-in-out,
-                opacity 250ms ease-in-out;
+        opacity 250ms ease-in-out;
 
- 
+
     background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
+
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
         background-image: url(/src/images/img-bg-menu/bg-menu-mobile-2x.jpg);
-  }
+    }
 
     @media screen and (min-width: $tablet-min) {
         top: 140px;
-        
+
         background-image: url(/src/images/img-bg-menu/bg-menu-tablet.jpg);
-     @media (min-device-pixel-ratio: 2),
-    (min-resolution: 192dpi),
-    (min-resolution: 2dppx) {
-    background-image: url(/src/images/img-bg-menu/bg-menu-tablet-2x.jpg);
-      }      
+
+        @media (min-device-pixel-ratio: 2),
+        (min-resolution: 192dpi),
+        (min-resolution: 2dppx) {
+            background-image: url(/src/images/img-bg-menu/bg-menu-tablet-2x.jpg);
+        }
     }
+
     @media screen and (min-width: $desktop-min) {
-    display: none;    
+        display: none;
     }
 }
 
@@ -141,14 +149,15 @@
 .menu__list {
     text-align: center;
     padding-top: 64px;
-@media screen and (min-width: $tablet-min) {
-    padding-top: 120px; 
+
+    @media screen and (min-width: $tablet-min) {
+        padding-top: 120px;
     }
 
 }
 
 .menu__item:not(:last-child) {
-margin-bottom: 40px;
+    margin-bottom: 40px;
 }
 
 
@@ -159,21 +168,21 @@ margin-bottom: 40px;
     text-transform: uppercase;
     color: $white-text-color;
     transition: border-bottom 250ms linear;
+
     &:hover,
     &:focus {
-    border-bottom: 1px solid $green-text-color;
-        }
+        border-bottom: 1px solid $green-text-color;
+    }
 
-@media screen and (min-width: $tablet-min) {
-    font-size: 32px; 
-}
+    @media screen and (min-width: $tablet-min) {
+        font-size: 32px;
+    }
 
-@media screen and (min-width: $desktop-min) {
-    display: none;   
-}
+    @media screen and (min-width: $desktop-min) {
+        display: none;
+    }
 }
 
 .no-scroll {
     overflow: hidden;
-  }
-  
+}
