@@ -1,1 +1,159 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.order-section {
+  background-image: url(../images/img-order/background-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.order-title {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
+  margin-bottom: 75px;
+  
+  
+}
+
+.order-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-image {
+  width: 387px;
+  height: 346px;
+  border-radius: 12px;
+  margin-bottom: 48px;
+}
+
+.order-subtitle {
+  font-weight: 500;
+  font-size: 56px;
+  line-height: 66px;
+  margin-bottom: 32px;
+  
+}
+
+.order-price-text {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  margin-right: 40px;
+  /* identical to box height, or 24px */
+  text-decoration-line: line-through;
+
+  color: мфк;
+}
+
+.order-price-text__active {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 100%;
+  /* identical to box height, or 48px */
+
+  color: #86E543;
+
+}
+
+.product-list {
+  margin-top: 40px;
+  display: flex;
+  gap: 24px;
+}
+
+.order-price__box{
+  display: flex;
+  align-items: center;
+}
+
+.box-prices {
+  display: block;
+}
+
+.order-form__title {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 42px;
+  margin-bottom: 48px;
+
+  color: #86E543;
+}
+
+.order-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-form__input {
+  width: 590px;
+  border: none ;
+  border-bottom: 1px solid #86E543;
+  text-transform: capitalize;
+  appearance: none;
+  color: #FFFFFF;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 44px;
+
+  background: none;
+
+ 
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: #17573D;
+  }
+
+  &::placeholder {
+    color: #FFFFFF;
+  }
+}
+
+.order-form__select {
+  width: 590px;
+  border: none ;
+  border-bottom: 1px solid #86E543;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  appearance: none;
+  margin-bottom: 44px;
+
+  background: none;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: #01383A;
+  }
+}
+
+
+
+
+.order-form__textarea {
+  border: 1px solid #86E543;
+  border-radius: 0px;
+  background-color: #01383A;
+  
+  color: #FFFFFF;
+  width: 589px;
+  height: 360px;
+}
+
+.order-form__button {
+  justify-content: center;
+  align-items: center;
+  padding: 16px 20px;
+  gap: 10px;
+  background-color: #86E543;
+  color: #01383A;
+  border-radius: 16px;
+}
