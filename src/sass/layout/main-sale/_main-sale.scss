@@ -14,26 +14,28 @@
 }
 
 .main-sale__title {
-  margin-left: 63px;
+  // margin-left: 63px;
   margin-bottom: 0;
   // @media screen and (min-width: 420px) {
   //   margin-left: 144px;
   // }
 
   @include tablet {
+    // padding-left: calc(142px - 80px);
     font-size: 56px;
     line-height: 1.18;
     margin-bottom: 0;
     margin-left: 63px;
   }
   @include desktop {
+    // padding-left: 102px;
     margin-bottom: 0;
     margin-left: 102px;
   }
 }
 
 .sale-menu {
-  margin-top: 24px;
+  margin-top: calc(24px + 7px);
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -46,7 +48,7 @@
     margin-bottom: 28px;
   }
   @include desktop {
-    margin-top: 16px;
+    margin-top: calc(16px + 19px);
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
