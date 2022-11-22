@@ -63,10 +63,16 @@
   width: 288px;
   height: 254px;
   border-radius: 12px;
+  margin-bottom: 16px;
 
   @media screen and (min-width: $tablet-min) {
     width: 387px;
     height: 346px;
+    margin-bottom: 24px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-bottom: 0;
   }
 }
 
@@ -345,4 +351,10 @@
 
 .order-box-desktop {
   display: block;
+}
+
+.order-form__option {
+  &:checked {
+    background-color: #17573d;
+  }
 }
