@@ -38,12 +38,28 @@ $transition-shadow: box-shadow 250ms cubic-bezier(0.21, 0.65, 0.66, 0.12);
 $line-height-mobile: 7px;
 $line-height-tablet: 19px;
 $line-margin-sale-mobile: -16px;
-$line-margin-sale-tablet: -80px;
+$line-margin-sale-tablet-all: -120px;
 $line-margin-sale-desktop: -40px;
+
+// это только для блока sale
+$line-margin-sale-tablet: -80px;
 
 // для ломаной линии SALE
 $line-distance-sale-mobile: 133px;
 $line-distance-sale-tablet: 324px;
 
-$line-distance-ass-mobile: 184px;
-$line-distance-ass-tablet: 532px;
+$line-distance-acc-mobile: 184px;
+$line-distance-acc-tablet: 532px;
+
+$line-distance-order-mobile: 185px;
+$line-distance-order-tablet: 424px;
+
+$line-distance-cont-mobile: 121px;
+$line-distance-cont-tablet: 417px;
+
+$line-distance-blog-mobile: 125px;
+$line-distance-blog-tablet: 262px;
+
+$line-distance-blog-titles-mobile: 121px;
+$line-distance-blog-titles-tablet: 269px;
+$line-distance-blog-titles-desktop: 424px;
