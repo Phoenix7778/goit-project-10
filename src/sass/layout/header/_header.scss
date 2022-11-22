@@ -1,188 +1,187 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 .header {
-    position: relative;
-    padding: 24px 0;
-    background: $teal-text-color;
-    box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2), 0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
+  position: relative;
+  padding: 24px 0;
+  z-index: 10;
+  background: $teal-text-color;
+  box-shadow: 0px 4px 10px rgba(97, 162, 58, 0.2),
+    0px 4px 50px rgba(94, 236, 54, 0.5), 0px 4px 4px rgba(17, 168, 26, 0.2);
 
-    @media screen and (min-width: $tablet-min) {
-        padding: 40px 0;
-    }
+  @media screen and (min-width: $tablet-min) {
+    padding: 40px 0;
+  }
 }
 
 .header__overlay {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo {
-    width: 115px;
-    text-decoration: none;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    text-align: center;
-    color: $white-text-color;
+  width: 115px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white-text-color;
 
-
-    @media screen and (min-width: $desktop-min) {
-        width: 121px;
-    }
+  @media screen and (min-width: $desktop-min) {
+    width: 121px;
+  }
 }
 
 .header__nav {
-    @media screen and (max-width: $tablet-max) {
-        display: none;
-    }
+  @media screen and (max-width: $tablet-max) {
+    display: none;
+  }
 }
 
 .header__list {
-    @media screen and (min-width: $desktop-min) {
-        display: flex;
-    }
+  @media screen and (min-width: $desktop-min) {
+    display: flex;
+  }
 }
 
 .header__item:not(:last-child) {
-    margin-right: 48px;
+  margin-right: 48px;
 }
 
 .header__item {
-    display: flex;
-    margin-bottom: 8px;
+  display: flex;
+  margin-bottom: 8px;
 }
 
 .header__link {
-    padding-bottom: 8px;
-    text-decoration: none;
-    font-size: 16px;
-    line-height: 1;
-    color: $white-text-color;
+  padding-bottom: 8px;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1;
+  color: $white-text-color;
 
-    &:hover,
-    &:focus {
-        border-bottom: 1px solid $green-text-color;
-    }
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $green-text-color;
+  }
 }
 
 .header__button {
-    color: $dark-text-color;
+  color: $dark-text-color;
 }
 
 .button--header {
-    @media screen and (max-width: $mobile-max) {
-        display: none;
-    }
+  @media screen and (max-width: $mobile-max) {
+    display: none;
+  }
 }
 
 .menu-button {
-    display: inline-flex;
-    border: none;
-    background-color: transparent;
-    margin: 0;
-    padding: 0;
+  display: inline-flex;
+  border: none;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
 
-    @media screen and (min-width: $desktop-min) {
-        display: none;
-    }
+  @media screen and (min-width: $desktop-min) {
+    display: none;
+  }
 }
 
 .menu-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    z-index: 5;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
 
-    flex-direction: column;
-    overflow-y: scroll;
+  flex-direction: column;
+  overflow-y: scroll;
 
-    padding: 88px 40px;
+  padding: 88px 40px;
 
-    transform: translateY(-100%);
-    transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(-100%);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-    background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
+  background-image: url(/src/images/img-bg-menu/bg-menu-mobile.jpg);
 
-    @media (min-device-pixel-ratio: 2),
+  @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: url(/src/images/img-bg-menu/bg-menu-mobile-2x.jpg);
+    background-image: url(/src/images/img-bg-menu/bg-menu-mobile-2x.jpg);
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 140px;
+
+    background-image: url(/src/images/img-bg-menu/bg-menu-tablet.jpg);
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(/src/images/img-bg-menu/bg-menu-tablet-2x.jpg);
     }
+  }
 
-    @media screen and (min-width: $tablet-min) {
-        padding-top: 140px;
-
-        background-image: url(/src/images/img-bg-menu/bg-menu-tablet.jpg);
-
-        @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-            background-image: url(/src/images/img-bg-menu/bg-menu-tablet-2x.jpg);
-        }
-    }
-
-    @media screen and (min-width: $desktop-min) {
-        display: none;
-    }
+  @media screen and (min-width: $desktop-min) {
+    display: none;
+  }
 }
 
 .menu-container.is-open {
-    transform: translateY(0);
-    display: block;
+  transform: translateY(0);
+  display: block;
 }
 
 .menu-button .icon-close {
-    display: none;
+  display: none;
 }
 
 .menu-button.is-open .icon-open {
-    display: none;
+  display: none;
 }
 
 .menu-button.is-open .icon-close {
-    display: block;
+  display: block;
 }
 
 .menu__list {
-    text-align: center;
-    padding-top: 64px;
+  text-align: center;
+  padding-top: 64px;
 
-    @media screen and (min-width: $tablet-min) {
-        padding-top: 120px;
-    }
-
+  @media screen and (min-width: $tablet-min) {
+    padding-top: 120px;
+  }
 }
 
 .menu__item:not(:last-child) {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-
 .menu__link {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.2;
-    text-transform: uppercase;
-    color: $white-text-color;
-    transition: border-bottom 250ms linear;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $white-text-color;
+  transition: border-bottom 250ms linear;
 
-    &:hover,
-    &:focus {
-        border-bottom: 1px solid $green-text-color;
-    }
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid $green-text-color;
+  }
 
-    @media screen and (min-width: $tablet-min) {
-        font-size: 32px;
-    }
+  @media screen and (min-width: $tablet-min) {
+    font-size: 32px;
+  }
 
-    @media screen and (min-width: $desktop-min) {
-        display: none;
-    }
+  @media screen and (min-width: $desktop-min) {
+    display: none;
+  }
 }
 
 .no-scroll {
-    overflow: hidden;
+  overflow: hidden;
 }
