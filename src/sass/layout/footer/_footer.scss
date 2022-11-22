@@ -5,6 +5,7 @@
     padding: 40px 0;
     background: #001414;
     color: #ffffff;
+    z-index: 40;
 }
 
 .footer-container {
@@ -13,6 +14,7 @@
     margin: 0;
     padding: 0px;
     list-style: none;
+
     @media (min-width: 768px) and (max-width: 1279px) {
         display: flex;
         justify-content: center;
@@ -20,7 +22,7 @@
         // gap: 30px 165px;
         // gap: 60px 165px;
         text-align: left;
-            align-items: baseline;
+        align-items: baseline;
     }
 
     @media screen and (min-width: 1280px) {
@@ -55,6 +57,7 @@
     color: #ffffff;
     list-style: none;
     padding-bottom: 16px;
+
     &:hover,
     &:focus {
         color: #2196F3;
@@ -86,17 +89,19 @@
 
 .socials {
     margin-top: 106px;
-        @media (min-width: 768px) {
-            margin-top: 0px;
-            padding: 0;
-        }
+
+    @media (min-width: 768px) {
+        margin-top: 0px;
+        padding: 0;
+    }
 }
 
 .footer-icon {
     padding: 0px;
+
     // gap: 32px;
     @media (min-width: 768px) {
-        display: flex;       
+        display: flex;
     }
 }
 
@@ -110,15 +115,17 @@
     border-radius: 50%;
     gap: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     &:hover,
-     &:focus {
+
+    &:hover,
+    &:focus {
         background-color: #2196F3;
-        }
+    }
 }
 
 .footer-icon__icons {
     fill: currentColor;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
     &:hover,
     &:focus {
         color: #2196F3;
