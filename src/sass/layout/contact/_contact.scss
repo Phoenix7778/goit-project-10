@@ -17,7 +17,7 @@
 .contact_title {
   @media screen and (max-width: $mobile-max) {
     margin-left: 16px;
-    margin-bottom: 35px;
+    margin-bottom: 4px;
   }
 
   @media screen and (min-width: $tablet-min) {
@@ -25,25 +25,28 @@
     font-size: 56px;
     line-height: 1.18;
     margin-left: 99px;
-    margin-bottom: 67px;
+    margin-bottom: 8px;
   }
 
   @media screen and (min-width: $desktop-min) {
     margin-left: 142px;
-    margin-bottom: 75px;
+    margin-bottom: 8px;
   }
 }
 
 .contact_img {
+  margin-top: 24px;
   margin-bottom: 16px;
   width: 100%;
   border-radius: 12px;
 
   @media screen and (max-width: $tablet-min) {
+    margin-top: 40px;
     margin-bottom: 32px;
   }
 
   @media screen and (min-width: $desktop-min) {
+    margin-top: 48px;
     margin-bottom: 60px;
   }
 }
@@ -67,6 +70,10 @@
   @media screen and (max-width: $mobile-max) {
     padding-left: 16px;
     padding-right: 16px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    max-width: 488px;
   }
 
   @media screen and (min-width: $desktop-min) {
