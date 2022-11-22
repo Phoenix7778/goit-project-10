@@ -6,11 +6,7 @@
   margin-right: $line-margin-sale-mobile;
   width: calc(100% - (2 * $line-margin-sale-mobile));
   display: flex;
-  // @include tablet {
-  //   margin-left: $line-margin-sale-tablet;
-  //   margin-right: $line-margin-sale-tablet;
-  //   width: calc(100% - (2 * $line-margin-sale-tablet));
-  // }
+
   @include tablet {
     margin-left: $line-margin-sale-desktop;
     margin-right: $line-margin-sale-desktop;
@@ -221,5 +217,17 @@
         width: calc(100% - ($line-distance-blog-titles-desktop + 1px));
       }
     }
+  }
+}
+.line-sale {
+  @include tablet {
+    margin-left: $line-margin-sale-tablet;
+    margin-right: $line-margin-sale-tablet;
+    width: calc(100% - (2 * $line-margin-sale-tablet));
+  }
+  @include desktop {
+    margin-left: -40px;
+    margin-right: -40px;
+    width: calc(100% - (2 * -40px));
   }
 }
