@@ -26,7 +26,7 @@
       width: $line-distance-sale-tablet;
       margin-top: calc($line-height-tablet - 1px);
     }
-    &--ass {
+    &--acc {
       width: $line-distance-ass-mobile;
       @include tablet {
         width: $line-distance-ass-tablet;
@@ -51,7 +51,7 @@
     @include tablet {
       width: calc(100% - $line-distance-sale-tablet);
     }
-    &--ass {
+    &--acc {
       width: calc(100% - $line-distance-ass-mobile);
       @include tablet {
         width: calc(100% - $line-distance-ass-tablet);
@@ -82,7 +82,7 @@
       width: calc($line-distance-sale-tablet + 8px);
       margin-top: calc($line-height-tablet - 1px);
     }
-    &--ass {
+    &--acc {
       width: calc($line-distance-ass-mobile + 4px);
       @include tablet {
         width: calc($line-distance-ass-tablet + 8px);
@@ -107,7 +107,7 @@
     @include tablet {
       width: calc(100% - ($line-distance-sale-tablet + 1px));
     }
-    &--ass {
+    &--acc {
       width: calc(100% - ($line-distance-ass-mobile + 1px));
       @include tablet {
         width: calc(100% - ($line-distance-ass-tablet + 1px));
