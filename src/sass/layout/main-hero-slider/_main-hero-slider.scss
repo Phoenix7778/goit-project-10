@@ -1,5 +1,11 @@
+<<<<<<< Updated upstream
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
-.hero {
+.section.hero {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.hero__container {
   background-image: url(../images/img-hero+slider/keyboard_mobile.png),
     url(../images/img-hero+slider/headphones_mobile.png),
     url(../images/img-hero+slider/computer_mouse_mobile.png),
@@ -9,8 +15,8 @@
   background-repeat: no-repeat;
   background-size: 88px, 186px, 99px, cover;
   background-position: top 394px right 73px, top -48px right 0px,
-    top 58px right 203px, top 0px right;
-  height: 497px;
+    top 58px right 203px, top -80px right;
+  height: 601px;
   padding-top: 180px;
   padding-bottom: 102px;
   margin: 0 auto;
@@ -36,11 +42,12 @@
     background-repeat: no-repeat;
     background-size: 88px, 186px, 99px, cover;
     background-position: top 394px right 73px, top -48px right 0px,
-      top 58px right 203px, top 0px right;
-    height: 497px;
+      top 58px right 203px, top -80px right;
+    height: 601px;
     padding-top: 180px;
     padding-bottom: 102px;
     margin: 0 auto;
+    max-width: 767px;
   }
 
   @media screen and (min-width: 768px) {
@@ -64,10 +71,11 @@
     background-repeat: no-repeat;
     background-size: 143px, 223px, 165px, cover;
     background-position: top 479px right 188px, top 226px right 19px,
-      top 49px right 165px, top 0px right;
+      top 49px right 165px, top -70px right;
     height: 724px;
     padding-top: 154px;
     padding-bottom: 208px;
+    max-width: 1000px;
     margin: 0 auto;
   }
 
@@ -90,13 +98,40 @@
 
     background-blend-mode: luminosity, hard-light;
     background-repeat: no-repeat;
-    background-size: 230px, 335px, 220px, 100% 860px;
+    background-size: 230px, 335px, 220px, cover;
     background-position: top 430px right 447px, top 154px right 90px,
       top 69px right 458px, top -136px center;
     height: 724px;
     padding-top: 160px;
     padding-bottom: 209px;
     margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+}
+
+.hero__box {
+  max-width: 247px;
+  margin: 0 auto;
+  @media screen and (min-width: 768px) {
+    min-width: 388px;
+    margin: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    min-width: 515px;
+    margin: 0;
+  }
+}
+
+.hero__title--mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.hero__title--desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
   }
 }
 
@@ -116,7 +151,6 @@
     font-size: 56px;
     line-height: 1.17;
     color: #ffffff;
-    width: 388px;
     margin-bottom: 94px;
     text-align: left;
   }
@@ -127,7 +161,6 @@
     font-size: 64px;
     line-height: 1.17;
     color: #ffffff;
-    width: 515px;
     margin-bottom: 40px;
     text-align: left;
   }
@@ -181,11 +214,231 @@
 .hero__container {
   text-align: center;
   @media screen and (min-width: 768px) {
-    margin-left: 40px;
+    padding-left: 40px;
     text-align: left;
   }
   @media screen and (min-width: 1280px) {
-    margin-left: 142px;
+    padding-left: 142px;
     text-align: left;
   }
 }
+
+.slider__title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.18;
+  text-align: center;
+  text-transform: uppercase;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
+.slider__box {
+  @media screen and (max-width: 767px) {
+    max-width: 321px;
+    height: 498px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+    height: 498px;
+  }
+  @media screen and (min-width: 768px) {
+    max-width: 1280px;
+    height: 506px;
+  }
+}
+
+.slider__text--upper {
+  text-transform: uppercase;
+}
+
+.slider__text.first {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 360px;
+    left: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 326px;
+    left: 345px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.17;
+  }
+
+  background: linear-gradient(
+    270deg,
+    #1edde0 13.26%,
+    #8bda41 51.01%,
+    #ef001b 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.slider__text.secondary {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 360px;
+    left: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 316px;
+    left: 49px;
+    width: 580px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.35;
+  }
+
+  background: linear-gradient(
+    270deg,
+    #03fe8f 4.61%,
+    #ebdcff 57.91%,
+    #ff98f3 92.2%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.slider__text.third {
+  @media screen and (max-width: 767px) {
+    position: absolute;
+    top: 360px;
+    left: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.16;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.17;
+  }
+
+  @media screen and (min-width: 1280px) {
+    position: absolute;
+    top: 316px;
+    left: 49px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.35;
+  }
+
+  background: linear-gradient(
+    270deg,
+    #ffffff 13.26%,
+    #693cf9 60.87%,
+    #f475eb 107.89%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.slider__text--desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+}
+
+.slider__text--mobile {
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.swiper {
+  @media screen and (max-width: 767px) {
+    height: 522px;
+  }
+  @media screen and (min-width: 768px) {
+    height: 530px;
+  }
+}
+
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 40px;
+  height: 16px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+
+.swiper-pagination-bullet {
+  width: 16px;
+  height: 16px;
+  background-color: #ffffff;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets
+  .swiper-pagination-bullet {
+  margin-right: 16px;
+  opacity: 100%;
+}
+=======
+>>>>>>> Stashed changes
