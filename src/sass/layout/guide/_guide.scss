@@ -8,7 +8,7 @@ ol {
 }
 
 .container.guide {
-     position: relative;
+  position: relative;
   @media screen and (max-width: 479px) {
     padding-left: 0;
     padding-right: 0;
@@ -26,20 +26,19 @@ ol {
   font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
-  margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
     font-size: 56px;
     line-height: 1;
-    margin-bottom: 72px;
+    margin-bottom: 24px;
   }
 
   @media screen and (min-width: 1280px) {
-    margin-bottom: 110px;
+    margin-bottom: 16px;
   }
 }
 
-.guide-wrap { 
+.guide-wrap {
   @media screen and (min-width: 768px) {
     display: flex;
     align-items: flex-end;
@@ -65,26 +64,28 @@ ol {
   }
 
   @media screen and (min-width: 1280px) {
-    display: flex;  
+    display: flex;
     gap: 96px;
     margin-left: 120px;
     position: absolute;
-    top: 116px;
+    top: 110px;
     left: 430px;
   }
 }
 
 .guide-box {
+  margin-top: 20px;
   margin-bottom: 20px;
-
   @media screen and (min-width: 768px) {
     margin-bottom: 30px;
+    margin-top: 24px;
   }
   @media screen and (min-width: 1280px) {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     margin-bottom: 48px;
+    margin-top: 65px;
   }
 }
 
@@ -147,7 +148,7 @@ ol {
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {
- margin-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
 
