@@ -231,3 +231,13 @@
     width: calc(100% - (2 * -40px));
   }
 }
+.line-broken--cont {
+  margin-left: 0;
+  margin-right: 0;
+  width: 100%;
+  @include tablet {
+    margin-left: $line-margin-sale-desktop;
+    margin-right: $line-margin-sale-desktop;
+    width: calc(100% - (2 * $line-margin-sale-desktop));
+  }
+}
