@@ -99,7 +99,7 @@
     height: 100vh;
     z-index: 1;
     transform: translateY(100%);
-    opacity: 0;
+    display: none;
     transition: transform 250ms ease-in-out,
         opacity 250ms ease-in-out;
 
@@ -131,7 +131,7 @@
 
 .menu-container.is-open {
     transform: translateY(0);
-    opacity: 1;
+    display: block;
 }
 
 .menu-button .icon-close {
