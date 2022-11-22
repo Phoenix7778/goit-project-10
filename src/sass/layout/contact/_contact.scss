@@ -16,16 +16,16 @@
 
 .contact_title {
   @media screen and (max-width: $mobile-max) {
-  margin-left: 16px;
-  margin-bottom: 35px;
+    margin-left: 16px;
+    margin-bottom: 35px;
   }
 
   @media screen and (min-width: $tablet-min) {
-  font-weight: 500;
-  font-size: 56px;
-  line-height: 1.18;
-  margin-left: 99px;
-  margin-bottom: 67px;
+    font-weight: 500;
+    font-size: 56px;
+    line-height: 1.18;
+    margin-left: 99px;
+    margin-bottom: 67px;
   }
 
   @media screen and (min-width: $desktop-min) {
@@ -37,13 +37,14 @@
 .contact_img {
   margin-bottom: 16px;
   width: 100%;
+  border-radius: 12px;
 
   @media screen and (max-width: $tablet-min) {
     margin-bottom: 32px;
   }
 
   @media screen and (min-width: $desktop-min) {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -69,7 +70,7 @@
   }
 
   @media screen and (min-width: $desktop-min) {
-  max-width: 488px;
+    max-width: 488px;
   }
 }
 
@@ -85,22 +86,21 @@
   }
 
   @media screen and (min-width: $desktop-min) {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 }
 
 .contact_item-tab-wrap {
-@media screen and (min-width: $tablet-min) {
-  display: flex;
-  gap: 32px;
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+    gap: 32px;
   }
 
-@media screen and (min-width: $desktop-min) {
-display: flex;
-flex-direction: column;
-gap: 40px;
-}
-
+  @media screen and (min-width: $desktop-min) {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
 }
 
 .contact_item,
@@ -113,8 +113,8 @@ gap: 40px;
 
 .contact_item {
   @media screen and (min-width: $tablet-min) {
-  font-size: 24px;
-  line-height: 1.17;
+    font-size: 24px;
+    line-height: 1.17;
   }
 }
 
@@ -126,11 +126,11 @@ gap: 40px;
   margin-bottom: 24px;
 
   @media screen and (min-width: $tablet-min) {
-  margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: $desktop-min) {
-  margin-bottom: 0;
+    margin-bottom: 0;
   }
 }
 
@@ -156,8 +156,8 @@ gap: 40px;
   }
 
   @media screen and (min-width: $desktop-min) {
-  padding-left: 0;
-  padding-right: 0;
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
@@ -169,12 +169,12 @@ gap: 40px;
   padding-left: 17px;
 
   @media screen and (min-width: $tablet-min) {
-  font-size: 36px;
-  padding-left: 50px;
+    font-size: 36px;
+    padding-left: 50px;
   }
 
   @media screen and (min-width: $desktop-min) {
-  padding-left: 0;
+    padding-left: 0;
   }
 }
 
@@ -186,7 +186,7 @@ gap: 40px;
   @media screen and (min-width: $tablet-min) {
     font-size: 18px;
     line-height: 1.11;
-    }
+  }
 }
 
 .form_label-accent {
@@ -194,8 +194,8 @@ gap: 40px;
   color: #cdcdcd;
 
   @media screen and (min-width: $tablet-min) {
-  font-size: 18px;
-  line-height: 1.11;
+    font-size: 18px;
+    line-height: 1.11;
   }
 }
 
@@ -208,8 +208,8 @@ gap: 40px;
   flex-direction: column;
 
   @media screen and (min-width: $tablet-min) {
-  margin-left: 0;
-  margin-right: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -225,7 +225,7 @@ gap: 40px;
   color: $white-text-color;
 
   @media screen and (min-width: $desktop-min) {
-  min-width: 590px;
+    min-width: 590px;
   }
 }
 
@@ -245,11 +245,11 @@ gap: 40px;
   color: $white-text-color;
 
   @media screen and (min-width: $tablet-min) {
-  height: 120px;
+    height: 120px;
   }
 
   @media screen and (min-width: $desktop-min) {
-  margin-bottom: 46px;
+    margin-bottom: 46px;
   }
 }
 
