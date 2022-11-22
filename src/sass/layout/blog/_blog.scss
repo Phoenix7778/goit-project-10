@@ -1,17 +1,31 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
-
+.blog__container {
+  overflow: hidden;
+}
 .blog__title {
-  margin-bottom: 31px;
+  // margin-bottom: 31px;
 
   @media screen and (min-width: 768px) {
     margin-left: 59px;
-    margin-bottom: 67px;
+    margin-bottom: 3.5px;
     line-height: 1.18;
   }
 
   @media screen and (min-width: 1280px) {
     margin-left: 102px;
-    margin-bottom: 75px;
+    margin-bottom: 0;
+  }
+}
+
+.line-broken--blog {
+  margin-bottom: 20px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 48px;
   }
 }
 
