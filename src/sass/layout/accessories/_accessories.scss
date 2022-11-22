@@ -6,55 +6,13 @@
   }
 }
 
-// .accessories {
-//   @media screen and (min-width: $desktop-min) {
-//     background-image: url(../images/img-bg/bg3-desktop.jpg);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//   }
-// }
-
-.accessories  {
-    background-image: url(../images/img-accessories/mob-down.svg), url(../images/img-accessories/mob-top.svg), url(../images/img-bg/bg3-desktop.jpg);
-    background-position: left 0 top 180px, left 0 top 170px, left top 0 ;
-    background-size: 100vw, 100vw, cover;
-    background-repeat: no-repeat;
-  
-     @media screen and (min-width: 481px) {
-    background-image: url(../images/img-accessories/tab-down.svg), url(../images/img-accessories/tab-top.svg), url(../images/img-bg/bg3-desktop.jpg);
-    background-position: left 0 top 185px, left 0 top 175px, left top 0 ;
-    background-size: 100vw, 100vw, cover;
+.accessories {
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/bg3-desktop.jpg);
+    background-size: contain;
     background-repeat: no-repeat;
   }
-   @media screen and (min-width: 769px) {
-    background-image: url(../images/img-accessories/desk-down.svg), url(../images/img-accessories/desk-top.svg), url(../images/img-bg/bg3-desktop.jpg);
-    background-position: left 0 top 290px, left 0 top 280px, left top 0 ;
-    background-size: 100vw, 100vw, cover;
-    background-repeat: no-repeat;
-  }
-
-  }
-  // @media screen and (min-width: $desktop-min) {
-  //   background-image: url(../images/img-accessories/desk-down.svg), url(../images/img-accessories/desk-top.svg), url(../images/img-bg/bg3-desktop.jpg);
-  //   background-position: left 0 top 290px, left 0 top 280px, left top 0 ;
-  //   background-size: 100vw, 100vw, cover;
-  //   background-repeat: no-repeat;
-  // }
-  // @media screen and (max-width: 768px) {
-  //   background-image: url(../images/img-accessories/tab-down.svg), url(../images/img-accessories/tab-top.svg), url(../images/img-bg/bg3-desktop.jpg);
-  //   background-position: left 0 top 255px, left 0 top 245px, left top 0 ;
-  //   background-size: 100vw, 100vw, cover;
-  //   background-repeat: no-repeat;
-  // }
-  // @media screen and (min-width: 320px) {
-  //   background-image: url(../images/img-accessories/mob-down.svg), url(../images/img-accessories/mob-top.svg), url(../images/img-bg/bg3-desktop.jpg);
-  //   background-position: left 0 top 180px, left 0 top 170px, left top 0 ;
-  //   background-size: 100vw, 100vw, cover;
-  //   background-repeat: no-repeat;
-  // }
-
-
-
+}
 
 .accessories__accessories-buttons-list {
    display: flex;
@@ -62,7 +20,7 @@
     justify-content: center;
     align-items: center;
     gap: 25px;
-    margin-bottom: 32px; 
+    margin-bottom: 40px; 
     @media screen and (max-width: 767px) {
       width: 280px;
       margin-right: auto;
@@ -70,32 +28,12 @@
     }
     @media screen and (min-width: 768px) {
         gap:53px;
-        -bottom: 32px;
+        margin-bottom: 72px;
     }
     @media screen and (min-width: 1280px) {
         gap: 44px;
-        margin-bottom: 82px;
     }
 }
-
-// .accessories__title {
-//   display: inline-block;
-// font-size: 20px;
-// padding-left: 25px;
-
-// @media screen and (min-width: 480px) {
-//   padding-left: 50px;
-//   font-size: 24px;
-// }
-// @media screen and (min-width: 768px) {
-//   padding-left: 100px;
-//   font-size: 56px;
-// }  
-// @media screen and (min-width: 1280px) {
-//   font-size: 56px;
-//   padding-left: 200px;
-// }  
-// }
 
 .accessories__title {
   @media screen and (min-width: 481px) {
@@ -107,25 +45,18 @@
 }
 
 
-//  .accessories-buttons-list__item {
-//   @media screen and (min-width: 320) {
-//   flex-basis: calc((100% - 25px) / 2);
-//   }
-// }
-
 .accessories-products-list {
     text-align: -webkit-center;
-   padding-top: 40px;
+   margin-top: 16px;
    @media  screen and(min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 30px;
-    padding-top: 44px;
+    margin-top: 24px;
    }
    @media screen and(min-width: 1280px) {
     gap: 20px;
-    padding-top: 24px;
    }
 
 
@@ -215,16 +146,6 @@ transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
         margin-bottom: 0;
     }
     }
-
-
-
-    .picture {
-      max-width: 1280px;
-      height: 19px;
-      margin-bottom: 34px;
-
-    }
-
 
 .preloader {
   display: flex;
