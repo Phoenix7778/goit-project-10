@@ -270,6 +270,7 @@
   position: relative;
   background-color: inherit;
   border: none;
+  cursor: pointer;
   border-bottom: 1px solid $green-text-color;
   color: $white-text-color;
 
@@ -288,6 +289,7 @@
 
 .order_comment {
   background-color: inherit;
+  cursor: pointer;
   height: 95px;
   border: 1px solid $green-text-color;
   border-radius: 0px;
@@ -408,7 +410,7 @@
 .order-form__icon {
   position: absolute;
   fill: $white-text-color;
-
+  cursor: pointer;
   right: 0;
   bottom: 8px;
   transition: transform $transition-shadow;
@@ -417,6 +419,7 @@
 .order-form__select {
   max-width: 590px;
   border: none;
+  cursor: pointer;
   border-bottom: 1px solid #86e543;
   text-transform: capitalize;
   color: #fff;
