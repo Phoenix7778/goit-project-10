@@ -116,6 +116,11 @@
     margin: 0 auto;
     max-width: 1280px;
     margin: 0 auto;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    width: 1280px;
   }
 }
 
@@ -253,15 +258,17 @@
 }
 
 .slider__box {
-  @media screen and (max-width: 767px) {
-    max-width: 321px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (max-width: $mobile-max) {
+    // max-width: 321px;
     height: 498px;
   }
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
+  @media screen and (min-width: $tablet-min) {
+    // max-width: 768px;
     height: 498px;
   }
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: $desktop-min) {
     max-width: 1280px;
     height: 506px;
   }
