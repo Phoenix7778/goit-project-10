@@ -205,6 +205,7 @@
     padding-left: 0;
     padding-right: 0;
     display: flex;
+    justify-content: center;
   }
 }
 
@@ -301,7 +302,7 @@
 }
 
 .order-form__select {
-  max-width: 590px;
+  //   max-width: 590px;
   border: none;
   border-bottom: 1px solid #86e543;
   text-transform: capitalize;
@@ -350,14 +351,6 @@
 
   @media screen and (min-width: $desktop-min) {
     display: block;
-  }
-}
-
-.order_form {
-  @media screen and (min-width: $desktop-min) {
-    display: flex;
-    margin-left: 0;
-    margin-right: 0;
   }
 }
 
