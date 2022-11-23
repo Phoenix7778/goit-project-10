@@ -1,17 +1,6 @@
-// Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 .section.hero {
   padding-top: 0;
   padding-bottom: 0;
-}
-
-.section.slider {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
-.container.slider__box {
-  padding-left: 0;
-  padding-right: 0;
 }
 
 .hero__container {
@@ -23,8 +12,8 @@
   background-blend-mode: luminosity, hard-light;
   background-repeat: no-repeat;
   background-size: 88px, 186px, 99px, cover;
-  background-position: top 394px right 73px, top -48px right 0px,
-    top 58px right 203px, top -80px right;
+  background-position: top 394px right 73px, top -48px right 0px, top 58px right 203px,
+    top -80px right;
   height: 601px;
   padding-top: 180px;
   padding-bottom: 102px;
@@ -50,8 +39,8 @@
     background-blend-mode: luminosity, hard-light;
     background-repeat: no-repeat;
     background-size: 88px, 186px, 99px, cover;
-    background-position: top 394px right 73px, top -48px right 0px,
-      top 58px right 203px, top -80px right;
+    background-position: top 394px right 73px, top -48px right 0px, top 58px right 203px,
+      top -80px right;
     height: 601px;
     padding-top: 180px;
     padding-bottom: 102px;
@@ -79,8 +68,8 @@
     background-blend-mode: luminosity, hard-light;
     background-repeat: no-repeat;
     background-size: 143px, 223px, 165px, cover;
-    background-position: top 479px right 188px, top 226px right 19px,
-      top 49px right 165px, top -70px right;
+    background-position: top 479px right 188px, top 226px right 19px, top 49px right 165px,
+      top -70px right;
     height: 724px;
     padding-top: 154px;
     padding-bottom: 208px;
@@ -91,8 +80,7 @@
   @media screen and (min-width: 1280px) {
     background-image: url(../images/img-hero+slider/keyboard.png),
       url(../images/img-hero+slider/headphones.png),
-      url(../images/img-hero+slider/computer_mouse.png),
-      url(../images/img-hero+slider/hero.jpg);
+      url(../images/img-hero+slider/computer_mouse.png), url(../images/img-hero+slider/hero.jpg);
 
     @media screen and (min-device-pixel-ratio: 2),
       screen and (min-resolution: 192dpi),
@@ -108,19 +96,14 @@
     background-blend-mode: luminosity, hard-light;
     background-repeat: no-repeat;
     background-size: 230px, 335px, 220px, cover;
-    background-position: top 430px right 447px, top 154px right 90px,
-      top 69px right 458px, top -136px center;
+    background-position: top 430px right 447px, top 154px right 90px, top 69px right 458px,
+      top -136px center;
     height: 724px;
     padding-top: 160px;
     padding-bottom: 209px;
     margin: 0 auto;
     max-width: 1280px;
     margin: 0 auto;
-
-    margin-left: auto;
-    margin-right: auto;
-
-    width: 1280px;
   }
 }
 
@@ -137,7 +120,7 @@
   }
 }
 
-.hero__title--mobile {
+.hero__itle--mobile {
   @media screen and (min-width: 768px) {
     display: none;
   }
@@ -194,8 +177,7 @@
   padding: 16px 20px;
   &:hover,
   &:focus {
-    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5),
-      0px 4px 10px rgba(255, 255, 255, 0.1);
+    box-shadow: 0px 8px 20px rgba(134, 229, 67, 0.5), 0px 4px 10px rgba(255, 255, 255, 0.1);
   }
   @media screen and (min-width: 768px) {
     font-family: 'Roboto';
@@ -258,17 +240,15 @@
 }
 
 .slider__box {
-  margin-left: auto;
-  margin-right: auto;
-  @media screen and (max-width: $mobile-max) {
-    // max-width: 321px;
+  @media screen and (max-width: 767px) {
+    max-width: 321px;
     height: 498px;
   }
-  @media screen and (min-width: $tablet-min) {
-    // max-width: 768px;
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
     height: 498px;
   }
-  @media screen and (min-width: $desktop-min) {
+  @media screen and (min-width: 768px) {
     max-width: 1280px;
     height: 506px;
   }
@@ -288,6 +268,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
+    text-align: left;
   }
   @media screen and (min-width: 768px) {
     position: absolute;
@@ -298,6 +279,7 @@
     font-weight: 500;
     font-size: 56px;
     line-height: 1.17;
+    text-align: left;
   }
 
   @media screen and (min-width: 1280px) {
@@ -309,14 +291,10 @@
     font-weight: 500;
     font-size: 56px;
     line-height: 1.17;
+    text-align: left;
   }
 
-  background: linear-gradient(
-    270deg,
-    #1edde0 13.26%,
-    #8bda41 51.01%,
-    #ef001b 107.89%
-  );
+  background: linear-gradient(270deg, #1edde0 13.26%, #8bda41 51.01%, #ef001b 107.89%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -333,6 +311,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
+    text-align: left;
   }
 
   @media screen and (min-width: 768px) {
@@ -344,6 +323,7 @@
     font-weight: 500;
     font-size: 56px;
     line-height: 1.17;
+    text-align: left;
   }
 
   @media screen and (min-width: 1280px) {
@@ -356,14 +336,10 @@
     font-weight: 600;
     font-size: 56px;
     line-height: 1.35;
+    text-align: left;
   }
 
-  background: linear-gradient(
-    270deg,
-    #03fe8f 4.61%,
-    #ebdcff 57.91%,
-    #ff98f3 92.2%
-  );
+  background: linear-gradient(270deg, #03fe8f 4.61%, #ebdcff 57.91%, #ff98f3 92.2%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -380,6 +356,7 @@
     font-weight: 500;
     font-size: 24px;
     line-height: 1.16;
+    text-align: left;
   }
 
   @media screen and (min-width: 768px) {
@@ -391,6 +368,7 @@
     font-weight: 500;
     font-size: 56px;
     line-height: 1.17;
+    text-align: left;
   }
 
   @media screen and (min-width: 1280px) {
@@ -402,14 +380,10 @@
     font-weight: 600;
     font-size: 56px;
     line-height: 1.35;
+    text-align: left;
   }
 
-  background: linear-gradient(
-    270deg,
-    #ffffff 13.26%,
-    #693cf9 60.87%,
-    #f475eb 107.89%
-  );
+  background: linear-gradient(270deg, #ffffff 13.26%, #693cf9 60.87%, #f475eb 107.89%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -451,8 +425,7 @@
 }
 
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
-.swiper-pagination-horizontal.swiper-pagination-bullets
-  .swiper-pagination-bullet {
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   margin-right: 16px;
   opacity: 100%;
 }
