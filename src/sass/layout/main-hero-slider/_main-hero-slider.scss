@@ -1,14 +1,14 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
-<<<<<<< Updated upstream
+
 .hero {
-=======
+
 .section.hero {
   padding-top: 0;
   padding-bottom: 0;
 }
 
 .hero__container {
->>>>>>> Stashed changes
+
   background-image: url(../images/img-hero+slider/keyboard_mobile.png),
     url(../images/img-hero+slider/headphones_mobile.png),
     url(../images/img-hero+slider/computer_mouse_mobile.png),
@@ -106,8 +106,7 @@
     padding-top: 160px;
     padding-bottom: 209px;
     margin: 0 auto;
-<<<<<<< Updated upstream
-=======
+
     max-width: 1280px;
     margin: 0 auto;
   }
@@ -135,7 +134,7 @@
 .hero__title--desktop {
   @media screen and (max-width: 767px) {
     display: none;
->>>>>>> Stashed changes
+
   }
 }
 
@@ -228,8 +227,7 @@
     text-align: left;
   }
 }
-<<<<<<< Updated upstream
-=======
+
 
 .slider__title {
   font-family: 'Roboto';
@@ -457,4 +455,4 @@
   margin-right: 16px;
   opacity: 100%;
 }
->>>>>>> Stashed changes
+
