@@ -371,7 +371,7 @@
   </div>
 
   <div class="order_form-wrap">
-    <form class="order_form">
+    <form class="order_form" id="send">
       <div class="order-form-box-left">
         <p class="order-form__title">CONTACT US</p>
         <div class="order_form-field">
@@ -484,6 +484,7 @@
     <button
       class="button button--base js-open-modal"
       type="submit"
+      form="send"
       data-modal="buy-it-now"
     >
       Buy it now
@@ -491,6 +492,7 @@
     <button
       class="button button--order js-open-modal"
       type="submit"
+      form="send"
       data-modal="add-to-cart"
     >
       ADD TO CART
