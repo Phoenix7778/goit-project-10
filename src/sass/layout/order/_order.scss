@@ -10,23 +10,24 @@
 .order-title {
   font-size: 24px;
   line-height: 1.17;
-  margin-bottom: 35px;
+  // margin-bottom: 35px;
 
   @media screen and (min-width: $tablet-min) {
     font-size: 56px;
     line-height: 1.18;
-    margin-bottom: 51px;
+    // margin-bottom: 51px;
     margin-left: 99px;
   }
 
   @media screen and (min-width: $desktop-min) {
     line-height: 1.18;
-    margin-left: 142px;
-    margin-bottom: 75px;
+    margin-left: calc(142px - 40px);
+    // margin-bottom: 75px;
   }
 }
 
 .order-box {
+  margin-top: 24px;
   margin-bottom: 32px;
 
   @media screen and (min-width: $tablet-min) {
@@ -34,6 +35,7 @@
   }
 
   @media screen and (min-width: $desktop-min) {
+    margin-top: 48px;
   }
 }
 
