@@ -228,6 +228,7 @@
   position: relative;
   background-color: inherit;
   border: none;
+  cursor: pointer;
   border-bottom: 1px solid $green-text-color;
   color: $white-text-color;
 
@@ -246,6 +247,8 @@
 
 .form_comment {
   background-color: inherit;
+  cursor: pointer;
+  padding: 15px;
   height: 95px;
   border: 1px solid $green-text-color;
   border-radius: 0px;
