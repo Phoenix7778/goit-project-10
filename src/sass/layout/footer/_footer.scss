@@ -78,6 +78,7 @@
 .map__link {
   font-size: 16px;
   color: $white-text-color;
+
   &:hover,
   &:focus {
     border-bottom: 1px solid $green-text-color;
@@ -103,6 +104,7 @@
   display: block;
   color: $grey-text-color;
   font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
@@ -152,7 +154,7 @@
   border-radius: 50%;
   text-decoration: none;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
