@@ -3,6 +3,14 @@
   padding-bottom: 0;
 }
 
+.section.slider {
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/bg1-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
 .hero__container {
   background-image: url(../images/img-hero+slider/keyboard_mobile.png),
     url(../images/img-hero+slider/headphones_mobile.png),
