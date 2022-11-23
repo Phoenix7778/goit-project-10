@@ -36,6 +36,29 @@
   @media screen and (min-width: $desktop-min) {
     width: 121px;
   }
+
+  //Градієнт
+  background: linear-gradient(to right, crimson, pink, springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  transition: color 0.2s ease-in-out;
+  &:hover {
+    color: rgba(0, 0, 0, 0);
+  }
+  @keyframes rainbow {
+    0% {
+      background-position: left;
+    }
+    50% {
+      background-position: right;
+    }
+    100% {
+      background-position: left;
+    }
+  }
 }
 
 .header__nav {
