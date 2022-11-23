@@ -390,3 +390,49 @@
     margin-bottom: 0;
   }
 }
+
+// іконки
+.order_form-field {
+  position: relative;
+  & select:hover + .order-form__icon,
+  & select:focus + .order-form__icon {
+    transform: rotate(180deg);
+  }
+  & select:checked + .order-form__icon {
+    transform: rotate(180deg);
+  }
+}
+
+.order-form__icon {
+  position: absolute;
+  fill: $white-text-color;
+
+  right: 0;
+  bottom: 8px;
+  transition: transform $transition-shadow;
+}
+
+.order-form__select {
+  max-width: 590px;
+  border: none;
+  border-bottom: 1px solid #86e543;
+  text-transform: capitalize;
+  color: #fff;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  appearance: none;
+  margin-bottom: 44px;
+
+  background: none;
+  @media screen and (min-width: $tablet-min) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: #01383a;
+  }
+}
