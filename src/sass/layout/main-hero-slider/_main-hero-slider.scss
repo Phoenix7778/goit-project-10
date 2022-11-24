@@ -4,6 +4,7 @@
 }
 
 .section.slider {
+  padding-bottom: calc(48px + 48px);
   @media screen and (min-width: $desktop-min) {
     background-image: url(../images/img-bg/bg1-desktop.jpg);
     background-size: cover;
@@ -431,11 +432,12 @@
 }
 
 .swiper {
+  height: calc(530px + 24px + 8px);
   @media screen and (max-width: 767px) {
-    height: 522px;
+    height: calc(522px + 32px + 8px);
   }
   @media screen and (min-width: 768px) {
-    height: 530px;
+    height: calc(530px + 24px + 8px);
   }
 }
 
