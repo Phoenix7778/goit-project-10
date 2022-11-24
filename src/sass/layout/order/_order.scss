@@ -380,8 +380,11 @@
 }
 
 .order-form__option {
-  &:checked {
-    background-color: #17573d;
+  &:checked,
+  &:hover,
+  &:focus,
+  &:focus-within {
+    background: #17573d;
   }
 }
 
@@ -394,11 +397,8 @@
 // іконки
 .order_form-field {
   position: relative;
-  & select:hover + .order-form__icon,
-  & select:focus + .order-form__icon {
-    transform: rotate(180deg);
-  }
-  & select:checked + .order-form__icon {
+
+  & select:focus-within + .order-form__icon {
     transform: rotate(180deg);
   }
 }
@@ -429,10 +429,15 @@
     font-size: 18px;
     line-height: 1.11;
   }
+}
 
+.order_input {
+  appearance: none;
+
+  &:checked,
   &:hover,
-  &:focus-visible {
-    outline: none;
-    background-color: #01383a;
+  &:focus,
+  &:focus-within {
+    background: #17573d;
   }
 }
