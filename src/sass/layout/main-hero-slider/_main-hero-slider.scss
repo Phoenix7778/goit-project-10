@@ -5,6 +5,7 @@
 
 .section.slider {
   padding-bottom: calc(48px + 48px);
+  padding-top: 0;
   @media screen and (min-width: $desktop-min) {
     background-image: url(../images/img-bg/bg1-desktop.jpg);
     background-size: cover;
@@ -45,16 +46,16 @@
       }
     }
 
-    // background-blend-mode: luminosity, hard-light;
-    // background-repeat: no-repeat;
-    // background-size: 88px, 186px, 99px, cover;
-    // background-position: top 394px right 73px, top -48px right 0px,
-    //   top 58px right 203px, top -80px right;
-    // height: 601px;
-    // padding-top: 180px;
-    // padding-bottom: 102px;
-    // margin: 0 auto;
-    // max-width: 767px;
+    background-blend-mode: luminosity, hard-light;
+    background-repeat: no-repeat;
+    background-size: 88px, 186px, 99px, cover;
+    background-position: top 394px right 73px, top -48px right 0px,
+      top 58px right 203px, top -80px right;
+    height: 601px;
+    padding-top: 180px;
+    padding-bottom: 102px;
+    margin: 0 auto;
+    max-width: 767px;
   }
 
   @media screen and (min-width: 768px) {
