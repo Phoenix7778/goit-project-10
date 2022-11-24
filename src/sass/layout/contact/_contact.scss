@@ -264,6 +264,10 @@
 }
 
 .button--contacts {
-  margin: 0 auto;
+  
   display: block;
+
+  @media screen and (max-width: $tablet-max) {
+    margin: 0 auto; 
+  }
 }
