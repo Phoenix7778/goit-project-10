@@ -8,7 +8,7 @@
 **Main Page (hero + slider section)** - Ihor Masechko (IhorMasechko) <br> 
 **Main Page (sale section)** - Yuliia Zherebetska (glorrymiss) <br> 
 **All Accessories Page** - Dmytro Dobrobatko (dobryotec) <br> 
-**Take Order Page** - Jakiv Turyk (JakivT) **uploaded commits through other contributors* <br> 
+**Take Order Page** - Jakiv Tyrik (JakivT) **uploaded commits through other contributors* <br> 
 **Contact Page** - Maksym Mohniuk (MaksymMohniuk) <br> 
 **Blog Page** - Sergii Marchenko (sougutor) <br> 
 **Guide Page** - Sergiy Demchenko (Demniks) <br> 
