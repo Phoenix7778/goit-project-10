@@ -23,9 +23,9 @@
   background-size: 88px, 186px, 99px, cover;
   background-position: top 394px right 73px, top -48px right 0px,
     top 58px right 203px, top -80px right;
-  height: 601px;
+  height: calc(100% + 104px);
   padding-top: 180px;
-  padding-bottom: 102px;
+  padding-bottom: 127px;
   margin: 0 auto;
 
   @media screen and (min-width: 480px) {
@@ -45,16 +45,16 @@
       }
     }
 
-    background-blend-mode: luminosity, hard-light;
-    background-repeat: no-repeat;
-    background-size: 88px, 186px, 99px, cover;
-    background-position: top 394px right 73px, top -48px right 0px,
-      top 58px right 203px, top -80px right;
-    height: 601px;
-    padding-top: 180px;
-    padding-bottom: 102px;
-    margin: 0 auto;
-    max-width: 767px;
+    // background-blend-mode: luminosity, hard-light;
+    // background-repeat: no-repeat;
+    // background-size: 88px, 186px, 99px, cover;
+    // background-position: top 394px right 73px, top -48px right 0px,
+    //   top 58px right 203px, top -80px right;
+    // height: 601px;
+    // padding-top: 180px;
+    // padding-bottom: 102px;
+    // margin: 0 auto;
+    // max-width: 767px;
   }
 
   @media screen and (min-width: 768px) {
@@ -79,10 +79,10 @@
     background-size: 143px, 223px, 165px, cover;
     background-position: top 479px right 188px, top 226px right 19px,
       top 49px right 165px, top -70px right;
-    height: 724px;
+    height: calc(100% + 136px);
     padding-top: 154px;
     padding-bottom: 208px;
-    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -108,11 +108,11 @@
     background-size: 230px, 335px, 220px, cover;
     background-position: top 430px right 447px, top 154px right 90px,
       top 69px right 458px, top -136px center;
-    height: 724px;
-    padding-top: 160px;
+    height: calc(100% + 136px);
+    padding-top: 180px;
     padding-bottom: 209px;
     margin: 0 auto;
-    max-width: 1280px;
+    max-width: 100%;
     margin: 0 auto;
   }
 }
