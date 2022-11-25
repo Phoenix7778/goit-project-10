@@ -182,6 +182,10 @@
   margin-bottom: 16px;
 
   color: $green-text-color;
+  
+  @media screen and (max-width: $mobile-max) {
+     margin-bottom: 40px;
+  }
 
   @media screen and (min-width: $tablet-min) {
     font-size: 36px;
