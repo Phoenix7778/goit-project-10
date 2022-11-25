@@ -431,13 +431,15 @@
   }
 }
 
-.order_input {
+.order-form__select {
+  background-image: url(../images/polygon.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #ffffff;
+  -webkit-appearance: none;
   appearance: none;
+}
 
-  &:checked,
-  &:hover,
-  &:focus,
-  &:focus-within {
-    background: #17573d;
-  }
+.order-form__select:focus-within {
+  background-image: url(../images/polygon-up.png);
 }
