@@ -394,24 +394,6 @@
   }
 }
 
-// іконки
-.order_form-field {
-  position: relative;
-
-  & select:focus-within + .order-form__icon {
-    transform: rotate(180deg);
-  }
-}
-
-.order-form__icon {
-  position: absolute;
-  fill: $white-text-color;
-  cursor: pointer;
-  right: 0;
-  bottom: 8px;
-  transition: transform $transition-shadow;
-}
-
 .order-form__select {
   max-width: 590px;
   border: none;
@@ -435,7 +417,7 @@
   background-image: url(../images/polygon.png);
   background-repeat: no-repeat;
   background-position: right;
-  color: #ffffff;
+
   -webkit-appearance: none;
   appearance: none;
 }
