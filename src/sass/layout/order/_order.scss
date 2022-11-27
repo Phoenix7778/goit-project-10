@@ -582,17 +582,19 @@
   padding-bottom: 4px;
   cursor: pointer;
   margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
   @include tablet {
     padding-bottom: 25px;
   }
 }
 
-.selectCustom-trigger::after {
-  content: '▾';
-  position: absolute;
-  top: 0;
-  right: 0;
-}
+// .selectCustom-trigger::after {
+//   content: '▾';
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+// }
 
 .selectCustom-options,
 .selectCustom-optionsQ {
@@ -658,4 +660,19 @@
 .selectcustom-trigger:hover + .selectCustom-options,
 .selectcustom-trigger:hover + .selectCustom-optionsQ {
   display: block;
+}
+.select__icon {
+  fill: #fff;
+}
+.selectCustom-trigger:hover .select__icon,
+.selectCustom-trigger:active .select__icon,
+.selectCustom-trigger:focus .select__icon,
+.selectCustom-trigger:focus-within .select__icon {
+  transform: rotate(180deg);
+}
+.selectWrapper:hover .select__icon,
+.selectWrapper:active .select__icon,
+.selectWrapper:focus .select__icon,
+.selectWrapper:focus-within .select__icon {
+  transform: rotate(180deg);
 }
