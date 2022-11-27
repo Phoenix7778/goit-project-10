@@ -170,11 +170,6 @@
   }
 }
 
-// .order_form-wrap {
-//   padding-left: 49px;
-//   padding-right: 49px;
-// }
-
 .order-form__title {
   font-weight: 500;
   font-size: 24px;
@@ -182,6 +177,10 @@
   margin-bottom: 16px;
 
   color: $green-text-color;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: $tablet-min) {
     font-size: 36px;
@@ -194,7 +193,6 @@
   margin-right: auto;
 
   @media screen and (min-width: $tablet-min) {
-    width: 590px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -202,8 +200,6 @@
   @media screen and (min-width: $desktop-min) {
     padding-left: 0;
     padding-right: 0;
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -246,7 +242,9 @@
 .order_form-field-comment {
   display: flex;
   flex-direction: column;
-  // margin-top: 40px;
+  @media screen and (max-width: $tablet-max) {
+    margin-top: 40px;
+  }
 
   @media screen and (min-width: $tablet-min) {
     margin-left: 0;
@@ -332,12 +330,6 @@
     display: block;
   }
 }
-
-// .order-form-box-left {
-//   @media screen and (min-width: $desktop-min) {
-//     margin-right: 20.51px;
-//   }
-// }
 
 .order-box-tablet-wrap {
   @media screen and (min-width: $desktop-min) {
@@ -426,6 +418,10 @@
     font-size: 18px;
     line-height: 1.11;
   }
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 .select__head {
@@ -504,15 +500,20 @@
   background-color: #17573d;
 }
 
-// .select__list .select__item: {
-//   background-color: #17573d;
-// }
-
 .order-form__desktop {
   display: flex;
   justify-content: center;
 }
 
-// .form-box--block {
-//   display: block;
-// }
+.order-form-flex {
+  @media screen and (min-width: $desktop-min) {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.order-form-block {
+  @media screen and (min-width: $desktop-min) {
+    display: block;
+  }
+}
