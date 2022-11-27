@@ -261,7 +261,7 @@
             <div class="selectCustom-trigger"><span>Quantity</span><svg class="select__icon" width="18" height="13">
                 <use href="/src/images/sprite/symbol-defs.svg#icon-polygon"></use>
               </svg></div>
-            <ul class="selectCustom-optionsQ">
+            <ul class="selectCustom-options">
               <li class="selectCustom-option" data-value="bo">1</li>
               <li class="selectCustom-option" data-value="sg">2</li>
               <li class="selectCustom-option" data-value="wb">3</li>
@@ -270,14 +270,14 @@
         </div>
 
         <div class="selectWrapper">
-          <select class="selectNative js-selectNative" name="Payment" aria-labelledby="jobLabel">
+          <select class="selectNative js-selectNativeP" name="Payment" aria-labelledby="jobLabel">
             <option value="Payment" disabled="" selected="">Payment</option>
             <option value="Cash">Cash</option>
             <option value="Credit card">Credit card</option>
           </select>
 
           <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
-          <div class="selectCustom js-selectCustom" aria-hidden="true">
+          <div class="selectCustom js-selectCustomP" aria-hidden="true">
             <div class="selectCustom-trigger"><span>Payment</span><svg class="select__icon" width="18" height="13">
                 <use href="/src/images/sprite/symbol-defs.svg#icon-polygon"></use>
               </svg></div>
@@ -309,5 +309,6 @@
     </button>
   </div>
 </section>
-<script src="/src/js/select.js"></script>
-<!-- <script src="/src/js/select-q.js"></script> -->
+<script src="/src/js/select.js" type="module"></script>
+<script src="/src/js/select-q.js" type="module"></script>
+<script src="/src/js/select-p.js" type="module"></script>

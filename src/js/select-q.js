@@ -1,4 +1,4 @@
-/* Features to make the selectCustomQ work for mouse users.
+/* Features to make the selectCustom work for mouse users.
 
 - Toggle custom select visibility when clicking the "box"
 - Update custom select value when clicking in a option
@@ -9,33 +9,33 @@
 
 */
 
-const elselectNative = document.getElementsByClassName('js-selectNativeQ')[0];
-const elselectCustom = document.getElementsByClassName('js-selectCustomQ')[0];
-const elselectCustomBox = elselectCustom.children[0];
-const elselectCustomOpts = elselectCustom.children[1];
-const customOptsList = Array.from(elselectCustomOpts.children);
+const elSelectNative = document.getElementsByClassName('js-selectNativeQ')[0];
+const elSelectCustom = document.getElementsByClassName('js-selectCustomQ')[0];
+const elSelectCustomBox = elSelectCustom.children[0];
+const elSelectCustomOpts = elSelectCustom.children[1];
+const customOptsList = Array.from(elSelectCustomOpts.children);
 const optionsCount = customOptsList.length;
-const defaultLabel = elselectCustomBox.getAttribute('data-value');
+const defaultLabel = elSelectCustomBox.getAttribute('data-value');
 
 let optionChecked = '';
 let optionHoveredIndex = -1;
 
 // Toggle custom select visibility when clicking the box
-elselectCustomBox.addEventListener('click', e => {
-  const isClosedQ = !elselectCustom.classList.contains('isActiveQ');
+elSelectCustomBox.addEventListener('click', e => {
+  const isClosed = !elSelectCustom.classList.contains('isActive');
 
-  if (isClosedQ) {
-    openselectCustom();
+  if (isClosed) {
+    openSelectCustom();
   } else {
-    closeselectCustom();
+    closeSelectCustom();
   }
 });
 
-function openselectCustom() {
-  elselectCustom.classList.add('isActiveQ');
+function openSelectCustom() {
+  elSelectCustom.classList.add('isActive');
   // Remove aria-hidden in case this was opened by a user
   // who uses AT (e.g. Screen Reader) and a mouse at the same time.
-  elselectCustom.setAttribute('aria-hidden', false);
+  elSelectCustom.setAttribute('aria-hidden', false);
 
   if (optionChecked) {
     const optionCheckedIndex = customOptsList.findIndex(
@@ -49,10 +49,10 @@ function openselectCustom() {
   document.addEventListener('keydown', supportKeyboardNavigation);
 }
 
-function closeselectCustom() {
-  elselectCustom.classList.remove('isActiveQ');
+function closeSelectCustom() {
+  elSelectCustom.classList.remove('isActive');
 
-  elselectCustom.setAttribute('aria-hidden', true);
+  elSelectCustom.setAttribute('aria-hidden', true);
 
   updateCustomSelectHovered(-1);
 
@@ -62,8 +62,8 @@ function closeselectCustom() {
 }
 
 function updateCustomSelectHovered(newIndex) {
-  const prevOption = elselectCustomOpts.children[optionHoveredIndex];
-  const option = elselectCustomOpts.children[newIndex];
+  const prevOption = elSelectCustomOpts.children[optionHoveredIndex];
+  const option = elSelectCustomOpts.children[newIndex];
 
   if (prevOption) {
     prevOption.classList.remove('isHover');
@@ -78,27 +78,27 @@ function updateCustomSelectHovered(newIndex) {
 function updateCustomSelectChecked(value, text) {
   const prevValue = optionChecked;
 
-  const elPrevOption = elselectCustomOpts.querySelector(
+  const elPrevOption = elSelectCustomOpts.querySelector(
     `[data-value="${prevValue}"`
   );
-  const elOption = elselectCustomOpts.querySelector(`[data-value="${value}"`);
+  const elOption = elSelectCustomOpts.querySelector(`[data-value="${value}"`);
 
   if (elPrevOption) {
-    elPrevOption.classList.remove('isActiveQ');
+    elPrevOption.classList.remove('isActive');
   }
 
   if (elOption) {
-    elOption.classList.add('isActiveQ');
+    elOption.classList.add('isActive');
   }
 
-  elselectCustomBox.textContent = text;
+  elSelectCustomBox.textContent = text;
   optionChecked = value;
 }
 
 function watchClickOutside(e) {
-  const didClickedOutside = !elselectCustom.contains(event.target);
+  const didClickedOutside = !elSelectCustom.contains(event.target);
   if (didClickedOutside) {
-    closeselectCustom();
+    closeSelectCustom();
   }
 }
 
@@ -120,26 +120,26 @@ function supportKeyboardNavigation(e) {
   if (event.keyCode === 13 || event.keyCode === 32) {
     e.preventDefault();
 
-    const option = elselectCustomOpts.children[optionHoveredIndex];
+    const option = elSelectCustomOpts.children[optionHoveredIndex];
     const value = option && option.getAttribute('data-value');
 
     if (value) {
-      elselectNative.value = value;
+      elSelectNative.value = value;
       updateCustomSelectChecked(value, option.textContent);
     }
-    closeselectCustom();
+    closeSelectCustom();
   }
 
   // press ESC -> close selectCustom
   if (event.keyCode === 27) {
-    closeselectCustom();
+    closeSelectCustom();
   }
 }
 
 // Update selectCustom value when selectNative is changed.
-elselectNative.addEventListener('change', e => {
+elSelectNative.addEventListener('change', e => {
   const value = e.target.value;
-  const elRespectiveCustomOption = elselectCustomOpts.querySelectorAll(
+  const elRespectiveCustomOption = elSelectCustomOpts.querySelectorAll(
     `[data-value="${value}"]`
   )[0];
 
@@ -152,9 +152,9 @@ customOptsList.forEach(function (elOption, index) {
     const value = e.target.getAttribute('data-value');
 
     // Sync native select to have the same value
-    elselectNative.value = value;
+    elSelectNative.value = value;
     updateCustomSelectChecked(value, e.target.textContent);
-    closeselectCustom();
+    closeSelectCustom();
   });
 
   elOption.addEventListener('mouseenter', e => {

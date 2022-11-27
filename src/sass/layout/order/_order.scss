@@ -589,12 +589,13 @@
   }
 }
 
-// .selectCustom-trigger::after {
-//   content: '▾';
-//   position: absolute;
-//   top: 0;
-//   right: 0;
-// }
+.selectCustom-trigger::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: url(/src/images/sprite/symbol-defs.svg#icon-polygon);
+}
 
 .selectCustom-options,
 .selectCustom-optionsQ {
@@ -676,3 +677,6 @@
 .selectWrapper:focus-within .select__icon {
   transform: rotate(180deg);
 }
+// .selectCustom-option .select__icon {
+//   display: none;
+// }
