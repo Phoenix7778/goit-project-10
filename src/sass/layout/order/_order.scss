@@ -182,9 +182,9 @@
   margin-bottom: 16px;
 
   color: $green-text-color;
-  
+
   @media screen and (max-width: $mobile-max) {
-     margin-bottom: 40px;
+    margin-bottom: 40px;
   }
 
   @media screen and (min-width: $tablet-min) {
@@ -231,11 +231,42 @@
     line-height: 1.11;
   }
 }
+// .selectCustom {
+//   height: 20px;
+//   padding-bottom: 4px;
+//   margin-bottom: 40px;
+// }
+// .selectNative,
+// .selectCustom {
+//   position: relative;
+//   height: 20px;
+//   padding-bottom: 4px;
+//   margin-bottom: 40px;
+//   // width: 22rem;
+//   height: 4rem;
+// }
 
+// .selectCustom {
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   display: none;
+// }
+// @media (hover: hover) {
+//   .selectCustom {
+//     display: block;
+//   }
+// }
+// @media (hover: hover) {
+//   .selectNative:focus + .selectCustom {
+//     display: none;
+//   }
+// }
 .order_form-field {
   display: flex;
   flex-direction: column;
   height: 20px;
+  padding-bottom: 4px;
 
   &:not(:last-child) {
     margin-bottom: 40px;
@@ -246,11 +277,15 @@
     margin-right: 0;
   }
 }
+.selectWrapper {
+  position: relative;
+  margin-bottom: 0;
+}
 
 .order_form-field-comment {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  // margin-top: 40px;
 
   @media screen and (min-width: $tablet-min) {
     margin-left: 0;
@@ -382,8 +417,17 @@
     margin-bottom: 48px;
   }
 }
+.order-form__option:first-child {
+  margin-bottom: 12px;
+  // &:checked,
+  // &:hover,
+  // &:focus,
+  // &:focus-within {
+  //   background: #17573d;
+  // }
+}
 
-.order-form__option {
+.order-form__option:not(:first-child) {
   &:checked,
   &:hover,
   &:focus,
@@ -428,4 +472,169 @@
 
 .order-form__select:focus-within {
   background-image: url(../images/polygon-up.png);
+}
+
+// Both native and custom selects must have the same width/height.
+.selectNative,
+.selectCustom {
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+
+// Make sure the custom select does not mess with the layout
+.selectCustom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+// This media query detects devices where the primary
+// input mechanism can hover over elements. (e.g. computers with a mouse)
+@media (hover: hover) {
+  // Since we are using a mouse, it's safe to show the custom select.
+  .selectCustom {
+    display: block;
+  }
+
+  // In a computer using keyboard? Then let's hide back the custom select
+  // while the native one is focused:
+  .selectNative:focus + .selectCustom {
+    display: none;
+  }
+}
+
+/* Add the focus states too, They matter, always! */
+.selectNative:focus,
+.selectCustom.isActive .selectCustom-trigger {
+  outline: none;
+}
+
+//
+// Rest of the styles to create the custom select.
+// Just make sure the native and the custom have a similar "box" (the trigger).
+//
+
+.selectWrapper {
+  position: relative;
+}
+
+.selectNative,
+.selectCustom-trigger {
+  // padding-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid $green-text-color;
+  text-transform: capitalize;
+  color: white-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  appearance: none;
+  margin-bottom: 4px;
+  cursor: pointer;
+  background: none;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+    padding-bottom: 10px;
+  }
+}
+
+.selectNative {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid $green-text-color;
+  text-transform: capitalize;
+  color: $white-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  appearance: none;
+  margin-bottom: 40px;
+  cursor: pointer;
+  background: none;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}
+
+.selectCustom-trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: $teal-text-color;
+  padding-bottom: 4px;
+  cursor: pointer;
+  margin-top: 2px;
+  @include tablet {
+    padding-bottom: 25px;
+  }
+}
+
+.selectCustom-trigger::after {
+  content: '▾';
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.selectCustom-options {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.selectCustom.isActive .selectCustom-options,
+.selectCustom:focus-within .selectCustom-options,
+.selectCustom:focus-visible .selectCustom-options,
+.selectCustom:hover .selectCustom-options {
+  display: block;
+}
+
+.selectCustom-option {
+  position: relative;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}
+
+.selectCustom-option.isHover,
+.selectCustom-option:hover {
+  background-color: #17573d; // contrast AA
+  color: $white-text-color;
+  cursor: default;
+  // cursor: pointer;
+}
+
+// .selectCustom-option:not(:last-of-type)::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+// }
+
+.card {
+  position: relative;
+}
+
+.selectWrapper {
+  cursor: pointer;
+}
+
+.selectWrapper:hover + .selectWrapper,
+.selectWrapper:hover ~ .order_form-field-comment {
+  margin-top: 40px;
+}
+
+.selectcustom-trigger:hover + .selectCustom-options {
+  display: block;
 }
