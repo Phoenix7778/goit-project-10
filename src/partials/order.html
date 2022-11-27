@@ -246,41 +246,51 @@
           </div>
         </div>
 
-
-
-
-        <div class="order_form-field">
-          <select name="quantity" class="order-form__select" required>
-            <option value="" class="order-form__option" disabled selected hidden>
-              Quantity
-            </option>
-            <option value="black-orange" class="order-form__option">1</option>
-            <option value="silver-gray" class="order-form__option">2</option>
-            <option value="white blue" class="order-form__option">3</option>
+        <div class="selectWrapper">
+          <select class="selectNative js-selectNative" name="quantity" aria-labelledby="jobLabel">
+            <option value="Quantity" disabled="" selected="">Quantity</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
           </select>
+
+          <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
+          <div class="selectCustom js-selectCustom" aria-hidden="true">
+            <div class="selectCustom-trigger">Quantity</div>
+            <ul class="selectCustom-options">
+              <li class="selectCustom-option" data-value="bo">1</li>
+              <li class="selectCustom-option" data-value="sg">2</li>
+              <li class="selectCustom-option" data-value="wb">3</li>
+            </ul>
+          </div>
         </div>
 
-
-        <div class="order_form-field">
-          <select name="payment" class="order-form__select" required>
-            <option value="" class="order-form__option" disabled selected hidden>
-              Payment
-            </option>
-            <option value="black-orange" class="order-form__option">
-              Cash
-            </option>
-            <option value="silver-gray" class="order-form__option">
-              Credit card
-            </option>
+        <div class="selectWrapper">
+          <select class="selectNative js-selectNative" name="Payment" aria-labelledby="jobLabel">
+            <option value="Payment" disabled="" selected="">Payment</option>
+            <option value="Cash">Cash</option>
+            <option value="Credit card">Credit card</option>
           </select>
+
+          <!-- Hide the custom select from AT (e.g. SR) using aria-hidden -->
+          <div class="selectCustom js-selectCustom" aria-hidden="true">
+            <div class="selectCustom-trigger">Payment</div>
+            <ul class="selectCustom-options">
+              <li class="selectCustom-option" data-value="Cash">Cash</li>
+              <li class="selectCustom-option" data-value="Credit card">Credit card</li>
+            </ul>
+          </div>
         </div>
+
+        <div class="order_form-field-comment">
+          <label for="comment" class="order_label-accent">Leave your message</label>
+          <textarea class="order_comment" name="comment" id="comment" required pattern="[a-z]{1,30}(,[a-z]{1,30})*"
+            title="normal text"></textarea>
+        </div>
+
       </div>
 
-      <div class="order_form-field-comment">
-        <label for="comment" class="order_label-accent">Leave your message</label>
-        <textarea class="order_comment" name="comment" id="comment" required pattern="[a-z]{1,30}(,[a-z]{1,30})*"
-          title="normal text"></textarea>
-      </div>
+
     </form>
   </div>
 

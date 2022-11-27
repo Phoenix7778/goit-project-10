@@ -285,7 +285,7 @@
 .order_form-field-comment {
   display: flex;
   flex-direction: column;
-  margin-top: 40px;
+  // margin-top: 40px;
 
   @media screen and (min-width: $tablet-min) {
     margin-left: 0;
@@ -630,7 +630,8 @@
   cursor: pointer;
 }
 
-.selectWrapper:hover + .order_form-field {
+.selectWrapper:hover + .selectWrapper,
+.selectWrapper:hover ~ .order_form-field-comment {
   margin-top: 40px;
 }
 
