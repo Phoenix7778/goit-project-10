@@ -17,3 +17,5 @@
 **Buttons** - Olha Munaieva (OlgaMunaieva) <br> 
 **Modal windows** - Ganna Baranenko (ganna1008) <br> 
 **Animation + svg optimization** - Maksym Fito (Maks383) **uploaded commits through other contributors*
+
+P.S.: This project is a modified clone of the original Phoenix7778 repository. 
