@@ -15,21 +15,15 @@
 }
 
 .main-sale__title {
-  // margin-left: 63px;
   margin-bottom: 0;
-  // @media screen and (min-width: 420px) {
-  //   margin-left: 144px;
-  // }
 
   @include tablet {
-    // padding-left: calc(142px - 80px);
     font-size: 56px;
     line-height: 1.18;
     margin-bottom: 0;
     margin-left: 63px;
   }
   @include desktop {
-    // padding-left: 102px;
     margin-bottom: 0;
     margin-left: 102px;
   }
@@ -75,6 +69,17 @@
   }
   @include desktop {
     flex-basis: calc((100% - 80px) / 4);
+  }
+}
+
+.sale-menu__link {
+  display: block;
+  border-radius: 10px;
+  transition: $transition-shadow;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.5),
+      0px 4px 10px rgba(134, 229, 67, 0.1);
   }
 }
 

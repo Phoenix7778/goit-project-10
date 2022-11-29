@@ -267,6 +267,7 @@
   cursor: pointer;
   border-bottom: 1px solid $green-text-color;
   color: $white-text-color;
+  outline: transparent;
 
   @media screen and (min-width: $desktop-min) {
     width: 590px;
