@@ -231,13 +231,13 @@
     line-height: 1.11;
   }
 }
-// .selectCustom {
+// .select__custom {
 //   height: 20px;
 //   padding-bottom: 4px;
 //   margin-bottom: 40px;
 // }
-// .selectNative,
-// .selectCustom {
+// .select__native,
+// .select__custom {
 //   position: relative;
 //   height: 20px;
 //   padding-bottom: 4px;
@@ -246,19 +246,19 @@
 //   height: 4rem;
 // }
 
-// .selectCustom {
+// .select__custom {
 //   position: absolute;
 //   top: 0;
 //   left: 0;
 //   display: none;
 // }
 // @media (hover: hover) {
-//   .selectCustom {
+//   .select__custom {
 //     display: block;
 //   }
 // }
 // @media (hover: hover) {
-//   .selectNative:focus + .selectCustom {
+//   .select__native:focus + .select__custom {
 //     display: none;
 //   }
 // }
@@ -277,7 +277,7 @@
     margin-right: 0;
   }
 }
-.selectWrapper {
+.select {
   position: relative;
   margin-bottom: 0;
 }
@@ -479,18 +479,15 @@
 }
 
 // Both native and custom selects must have the same width/height.
-.selectNative,
-.selectCustom,
-.selectNativeQ,
-.selectCustomQ {
+.select__native,
+.select__custom {
   position: relative;
   width: 100%;
   height: 20px;
 }
 
 // Make sure the custom select does not mess with the layout
-.selectCustom,
-.selectCustomQ {
+.select__custom {
   position: absolute;
   top: 0;
   left: 0;
@@ -501,24 +498,24 @@
 // input mechanism can hover over elements. (e.g. computers with a mouse)
 @media (hover: hover) {
   // Since we are using a mouse, it's safe to show the custom select.
-  .selectCustom {
+  .select__custom {
     display: block;
   }
 
   // In a computer using keyboard? Then let's hide back the custom select
   // while the native one is focused:
-  .selectNative:focus + .selectCustom,
-  .selectNativeQ:focus + .selectCustomQ {
+  .select__native:focus + .select__custom {
     display: none;
   }
 }
 
 /* Add the focus states too, They matter, always! */
-.selectNative:focus,
-.selectCustom.isActive .selectCustom-trigger,
-.selectNativeQ:focus,
-.selectCustomQ.isActiveQ .selectCustom-trigger {
+.select__native:focus,
+.select__custom.isActive .select__trigger {
   outline: none;
+}
+.select__custom.isActive .select__trigger::after {
+  background-image: url(/src/images/polygon.svg);
 }
 
 //
@@ -526,13 +523,12 @@
 // Just make sure the native and the custom have a similar "box" (the trigger).
 //
 
-.selectWrapper {
+.select {
   position: relative;
 }
 
-.selectNative,
-.selectNativeQ,
-.selectCustom-trigger {
+.select__native,
+.select__trigger {
   // padding-bottom: 4px;
   border: none;
   border-bottom: 1px solid $green-text-color;
@@ -552,8 +548,7 @@
   }
 }
 
-.selectNative,
-.selectNativeQ {
+.select__native {
   -webkit-appearance: none;
   -moz-appearance: none;
   padding-bottom: 4px;
@@ -574,7 +569,7 @@
   }
 }
 
-.selectCustom-trigger {
+.select__trigger {
   position: relative;
   width: 100%;
   height: 100%;
@@ -589,16 +584,18 @@
   }
 }
 
-.selectCustom-trigger::after {
+.select__trigger::after {
   content: '';
   position: absolute;
-  top: 0;
+  width: 18px;
+  height: 13px;
+  top: 4px;
   right: 0;
-  background-image: url(/src/images/sprite/symbol-defs.svg#icon-polygon);
+  background-image: url(/src/images/polygon-down.svg);
+  background-repeat: no-repeat;
 }
 
-.selectCustom-options,
-.selectCustom-optionsQ {
+.select__options {
   position: absolute;
   top: 32px;
   left: 0;
@@ -606,23 +603,17 @@
   z-index: 1;
   display: none;
 }
-.selectCustom-optionsQ:hover,
-.selectCustom-options:hover {
+
+// .select__options:hover {
+//   display: block;
+// }
+
+.select__custom.isActive .select__options {
   display: block;
+  border-bottom: 1px solid $green-text-color;
 }
 
-.selectCustom.isActive .selectCustom-options,
-.selectCustom.isActiveQ .selectCustom-optionsQ,
-.selectCustom:focus-within .selectCustom-options,
-.selectCustom:focus-visible .selectCustom-options,
-.selectCustom:hover .selectCustom-options,
-.selectCustom:focus-within .selectCustom-optionsQ,
-.selectCustom:focus-visible .selectCustom-optionsQ,
-.selectCustom:hover .selectCustom-optionsQ {
-  display: block;
-}
-
-.selectCustom-option {
+.select__option {
   position: relative;
   @include tablet {
     font-size: 18px;
@@ -630,15 +621,14 @@
   }
 }
 
-.selectCustom-option.isHover,
-.selectCustom-option:hover {
+.select__option.isHover {
   background-color: #17573d; // contrast AA
   color: $white-text-color;
   cursor: default;
   // cursor: pointer;
 }
 
-// .selectCustom-option:not(:last-of-type)::after {
+// .select__option:not(:last-of-type)::after {
 //   content: '';
 //   position: absolute;
 //   bottom: 0;
@@ -650,33 +640,32 @@
   position: relative;
 }
 
-.selectWrapper {
+.select {
   cursor: pointer;
 }
 
-.selectWrapper:hover + .selectWrapper {
-  margin-top: 40px;
+.select__custom.isActive + .margin {
+  height: 64px;
 }
 
-.selectcustom-trigger:hover + .selectCustom-options,
-.selectcustom-trigger:hover + .selectCustom-optionsQ {
-  display: block;
-}
+// .select__trigger:hover + .select__options {
+//   display: block;
+// }
 .select__icon {
   fill: #fff;
 }
-.selectCustom-trigger:hover .select__icon,
-.selectCustom-trigger:active .select__icon,
-.selectCustom-trigger:focus .select__icon,
-.selectCustom-trigger:focus-within .select__icon {
+.select__trigger:hover .select__icon,
+.select__trigger:active .select__icon,
+.select__trigger:focus .select__icon,
+.select__trigger:focus-within .select__icon {
   transform: rotate(180deg);
 }
-.selectWrapper:hover .select__icon,
-.selectWrapper:active .select__icon,
-.selectWrapper:focus .select__icon,
-.selectWrapper:focus-within .select__icon {
+.select:hover .select__icon,
+.select:active .select__icon,
+.select:focus .select__icon,
+.select:focus-within .select__icon {
   transform: rotate(180deg);
 }
-// .selectCustom-option .select__icon {
-//   display: none;
-// }
+.order_input:focus-visible {
+  outline: none;
+}
