@@ -1,0 +1,536 @@
+// Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
+.order-section {
+  @media screen and (min-width: $desktop-min) {
+    background-image: url(../images/img-bg/bg1-desktop.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}
+
+.order-title {
+  font-size: 24px;
+  line-height: 1.17;
+  // margin-bottom: 35px;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 56px;
+    line-height: 1.18;
+    // margin-bottom: 51px;
+    margin-left: 99px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    line-height: 1.18;
+    margin-left: calc(142px - 40px);
+    // margin-bottom: 75px;
+  }
+}
+
+.order-box {
+  margin-top: 24px;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 48px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-top: 48px;
+  }
+}
+
+.order-subtitle {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.19;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-bottom: 24px;
+    font-size: 56px;
+    line-height: 1.19;
+    width: 690px;
+    text-align: center;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    // margin-bottom: 32px;
+    // width: inherit;
+    // position: absolute;
+    // top: 0;
+    // right: 0;
+  }
+}
+
+.order-main_img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 288px;
+  height: 254px;
+  border-radius: 12px;
+  margin-bottom: 16px;
+
+  @media screen and (min-width: $tablet-min) {
+    width: 387px;
+    height: 346px;
+    margin-bottom: 0px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    // outline: 1px solid red;
+    width: 387px;
+    height: 346px;
+    margin: 0;
+  }
+}
+
+.order_img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 60px;
+  height: 62px;
+  border-radius: 12px;
+
+  @media screen and (min-width: $tablet-min) {
+    width: 154px;
+    height: 160px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    width: 155px;
+  }
+}
+
+.order-price-text {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  text-decoration-line: line-through;
+
+  color: $grey-text-color;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 24px;
+    margin-bottom: 56px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-bottom: 0px;
+  }
+}
+
+.order-price-text__active {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 100%;
+  color: $green-text-color;
+  margin-left: 60px;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 48px;
+    margin-left: 0;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-left: 65px;
+  }
+}
+
+.product-list {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+
+  @media screen and (min-width: $tablet-min) {
+    gap: 24px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-top: 40px;
+  }
+}
+
+.order-price__box {
+  display: flex;
+  justify-content: center;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 16px;
+  }
+
+  @media screen and (min-width: $tablet-min) and (max-width: $tablet-max) {
+    margin-left: 24px;
+    margin-top: 32px;
+    display: block;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
+
+.order_form-wrap {
+  padding-left: 49px;
+  padding-right: 49px;
+}
+
+.order-form__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  margin-bottom: 16px;
+
+  color: $green-text-color;
+
+  @media screen and (max-width: $mobile-max) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 36px;
+    margin-bottom: 48px;
+  }
+}
+
+.order_form {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $tablet-min) {
+    max-width: 590px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    padding-left: 0;
+    padding-right: 0;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.order_label {
+  position: absolute;
+  line-height: 1.25;
+  transition: transform 250ms linear;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.order_label-accent {
+  line-height: 1.25;
+  color: #cdcdcd;
+
+  @media screen and (min-width: $tablet-min) {
+    font-size: 18px;
+    line-height: 1.11;
+  }
+}
+
+.order_form-field {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  padding-bottom: 4px;
+
+  &:not(:last-child) {
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+.order_form-field-comment {
+  display: flex;
+  flex-direction: column;
+
+  // margin-top: 40px;
+
+  @media screen and (min-width: $tablet-min) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    margin-top: auto;
+  }
+}
+
+.order_label-accent {
+  margin-bottom: 4px;
+}
+
+.order_input {
+  position: relative;
+  background-color: inherit;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid $green-text-color;
+  color: $white-text-color;
+
+  @media screen and (min-width: $desktop-min) {
+    min-width: 590px;
+  }
+}
+
+.order_input:not(:placeholder-shown) + .order_label {
+  transform: translateY(-100%);
+}
+
+.order_input:focus + .order_label {
+  transform: translateY(-100%);
+}
+
+.order_comment {
+  background-color: inherit;
+  height: 95px;
+  border: 1px solid $green-text-color;
+  border-radius: 0px;
+  color: $white-text-color;
+  padding: 15px;
+  cursor: pointer;
+  &:focus-visible {
+    outline: none;
+  }
+
+  @media screen and (min-width: $tablet-min) {
+    height: 256px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    width: 589px;
+    margin-bottom: 40px;
+    margin-top: 4px;
+  }
+}
+
+.order-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 174px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 24px;
+
+  @media screen and (min-width: $tablet-min) {
+    width: 306px;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 48px;
+  }
+}
+
+.order-box-tablet {
+  @media screen and (min-width: $tablet-min) {
+    display: flex;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    display: block;
+  }
+}
+
+.order-form-box-left {
+  @media screen and (min-width: $desktop-min) {
+    margin-right: 20.51px;
+  }
+}
+
+.order-box-tablet-wrap {
+  @media screen and (min-width: $desktop-min) {
+    display: none;
+  }
+}
+
+.order-box-desktop-wrap {
+  @media screen and (max-width: $tablet-max) {
+    display: none;
+  }
+
+  @media screen and (min-width: $desktop-min) {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 48px;
+  }
+}
+
+.select {
+  position: relative;
+}
+
+// Both native and custom selects must have the same width/height.
+.select__native,
+.select__custom {
+  position: relative;
+  width: 100%;
+  height: 20px;
+}
+
+// Make sure the custom select does not mess with the layout
+.select__custom {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+// This media query detects devices where the primary
+// input mechanism can hover over elements. (e.g. computers with a mouse)
+@media (hover: hover) {
+  // Since we are using a mouse, it's safe to show the custom select.
+  .select__custom {
+    display: block;
+  }
+
+  // In a computer using keyboard? Then let's hide back the custom select
+  // while the native one is focused:
+  .select__native:focus + .select__custom {
+    display: none;
+  }
+}
+
+/* Add the focus states too, They matter, always! */
+.select__native:focus,
+.select__custom.isActive .select__trigger {
+  outline: none;
+}
+.select__custom.isActive .select__trigger::after {
+  background-image: url(/src/images/polygon-up.svg);
+}
+
+//
+// Rest of the styles to create the custom select.
+// Just make sure the native and the custom have a similar "box" (the trigger).
+//
+
+.select {
+  position: relative;
+}
+
+.select__native,
+.select__trigger {
+  // padding-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid $green-text-color;
+  text-transform: capitalize;
+  color: white-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  appearance: none;
+  margin-bottom: 4px;
+  cursor: pointer;
+  background: none;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+    padding-bottom: 10px;
+  }
+}
+
+.select__native {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding-bottom: 4px;
+  border: none;
+  border-bottom: 1px solid $green-text-color;
+  text-transform: capitalize;
+  color: $white-text-color;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  appearance: none;
+  margin-bottom: 40px;
+  cursor: pointer;
+  background: none;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}
+
+.select__trigger {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: $teal-text-color;
+  padding-bottom: 4px;
+  cursor: pointer;
+  margin-top: 2px;
+  display: flex;
+  justify-content: space-between;
+  @include tablet {
+    padding-bottom: 25px;
+  }
+}
+
+.select__trigger::after {
+  content: '';
+  position: absolute;
+  width: 18px;
+  height: 13px;
+  top: 4px;
+  right: 0;
+  background-image: url(/src/images/polygon-down.svg);
+  background-repeat: no-repeat;
+}
+
+.select__options {
+  position: absolute;
+  top: 32px;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+  display: none;
+}
+
+.select__custom.isActive .select__options {
+  display: block;
+  border-bottom: 1px solid $green-text-color;
+}
+
+.select__option {
+  position: relative;
+  @include tablet {
+    font-size: 18px;
+    line-height: calc(20 / 18);
+  }
+}
+
+.select__option.isHover {
+  background-color: #17573d; // contrast AA
+  color: $white-text-color;
+  cursor: default;
+}
+
+// .select__option:not(:last-of-type)::after {
+//   content: '';
+//   position: absolute;
+//   bottom: 0;
+//   left: 0;
+//   width: 100%;
+// }
+
+.select__custom.isActive + .select__margin {
+  height: 64px;
+}
+
+.order_input:focus-visible {
+  outline: none;
+}
