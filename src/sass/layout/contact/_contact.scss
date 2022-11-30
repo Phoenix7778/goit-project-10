@@ -230,6 +230,7 @@
   background-color: inherit;
   border: none;
   cursor: pointer;
+  outline: transparent;
   border-bottom: 1px solid $green-text-color;
   color: $white-text-color;
 
@@ -251,6 +252,7 @@
   cursor: pointer;
   padding: 15px;
   height: 95px;
+  outline: transparent;
   border: 1px solid $green-text-color;
   border-radius: 0px;
   color: $white-text-color;
@@ -265,10 +267,9 @@
 }
 
 .button--contacts {
-  
   display: block;
 
   @media screen and (max-width: $tablet-max) {
-    margin: 0 auto; 
+    margin: 0 auto;
   }
 }
