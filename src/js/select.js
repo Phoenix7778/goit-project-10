@@ -9,8 +9,8 @@
 
 */
 
-const elSelectNative = document.getElementsByClassName('js-selectNativeQ')[0];
-const elSelectCustom = document.getElementsByClassName('js-selectCustomQ')[0];
+const elSelectNative = document.getElementsByClassName('js-selectNative')[0];
+const elSelectCustom = document.getElementsByClassName('js-selectCustom')[0];
 const elSelectCustomBox = elSelectCustom.children[0];
 const elSelectCustomOpts = elSelectCustom.children[1];
 const customOptsList = Array.from(elSelectCustomOpts.children);
