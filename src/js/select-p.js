@@ -1,10 +1,12 @@
 /* Features to make the selectCustom work for mouse users.
+
 - Toggle custom select visibility when clicking the "box"
 - Update custom select value when clicking in a option
 - Navigate through options when using keyboard up/down
 - Pressing Enter or Space selects the current hovered option
 - Close the select when clicking outside of it
 - Sync both selects values when selecting a option. (native or custom)
+
 */
 
 const elSelectNative = document.getElementsByClassName('js-selectNativeP')[0];
