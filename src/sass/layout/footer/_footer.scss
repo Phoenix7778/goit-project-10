@@ -1,7 +1,6 @@
 // Цей файл використовується для об'єднання (підключення) всіх інших файлів зі стилями Вашої частини проєкту
 .footer {
     font-family: 'Roboto', sans-serif;
-    // text-align: center;
     padding: 40px 0;
     background: #001414;
     color: #ffffff;
@@ -12,18 +11,19 @@
     margin-right: auto;
     margin: 0;
     padding: 0px;
+    text-align: left;
     list-style: none;
      @media screen and (min-width: 768px) {
         display: flex;
         justify-content: center;
-        text-align: left;
         align-items: baseline;
     }
 }
 
 .logo {
-    @media screen and (min-width: 320px) {
-            margin-left: 16px;
+    @media screen and (max-width: $mobile-max) {
+            margin-right: 160px;
+            margin-bottom: 25px;
         }
     @media screen and (min-width: 768px) {
             width: 116px;
@@ -44,6 +44,14 @@
     color: #ffffff;
 }
 
+.inner {
+    display: flex;
+    margin-bottom: 0;
+    @media screen and (max-width: $mobile-max) {
+        justify-content: space-between;
+    }
+}
+
 .holder {
     @media screen and (min-width: 768px) {
             margin-right: 89px;
@@ -58,6 +66,21 @@
     margin: 0;
     padding: 0px;
     list-style: none;
+    @media screen and (max-width: $mobile-max) {
+            margin-right: 160px;
+        }
+}
+
+.map__item {
+    @media screen and (max-width: 480px) {
+     padding-bottom: 16px;
+ }
+}
+
+.address__item {
+ @media screen and (max-width: $mobile-max) {
+        margin-bottom: 8px;
+    }
 }
 
 .map__link {
@@ -106,11 +129,19 @@
         }        
 }
 
-.footer__icon {
+.footer-icon {
     justify-content: center;
+    @media screen and (max-width: $mobile-max) {
+            padding-right: 32px;
+        }
     @media screen and (min-width: 768px) {
             display: flex;
+            gap: 16px;
         }
+     @media screen and (min-width: 1280px) {
+            display: block;
+            gap: 16px;
+        }    
 }
 
 .footer-icon__item {
@@ -118,9 +149,13 @@
     width: 24px;
     height: 24px;
     margin-bottom: 16px;
+    @media screen and (max-width: $mobile-max) {
+           margin-bottom: 32px;
+        }
 }
 
 .footer-icon__link {
+    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;

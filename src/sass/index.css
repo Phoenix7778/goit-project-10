@@ -228,20 +228,21 @@ textarea {
   margin-right: auto;
   margin: 0;
   padding: 0px;
+  text-align: left;
   list-style: none;
 }
 @media screen and (min-width: 768px) {
   .footer-container {
     display: flex;
     justify-content: center;
-    text-align: left;
     align-items: baseline;
   }
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 767.5px) {
   .logo {
-    margin-left: 16px;
+    margin-right: 160px;
+    margin-bottom: 25px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -266,6 +267,16 @@ textarea {
   color: #ffffff;
 }
 
+.inner {
+  display: flex;
+  margin-bottom: 0;
+}
+@media screen and (max-width: 767.5px) {
+  .inner {
+    justify-content: space-between;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .holder {
     margin-right: 89px;
@@ -282,6 +293,23 @@ textarea {
   margin: 0;
   padding: 0px;
   list-style: none;
+}
+@media screen and (max-width: 767.5px) {
+  .map {
+    margin-right: 160px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .map__item {
+    padding-bottom: 16px;
+  }
+}
+
+@media screen and (max-width: 767.5px) {
+  .address__item {
+    margin-bottom: 8px;
+  }
 }
 
 .map__link {
@@ -331,12 +359,24 @@ textarea {
   }
 }
 
-.footer__icon {
+.footer-icon {
   justify-content: center;
 }
+@media screen and (max-width: 767.5px) {
+  .footer-icon {
+    padding-right: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
-  .footer__icon {
+  .footer-icon {
     display: flex;
+    gap: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .footer-icon {
+    display: block;
+    gap: 16px;
   }
 }
 
@@ -346,8 +386,14 @@ textarea {
   height: 24px;
   margin-bottom: 16px;
 }
+@media screen and (max-width: 767.5px) {
+  .footer-icon__item {
+    margin-bottom: 32px;
+  }
+}
 
 .footer-icon__link {
+  display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
